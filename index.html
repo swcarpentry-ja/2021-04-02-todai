@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>index.utf8</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: title-slide
+background-image:url(images/title-image.png)
+background-size: 35%
+background-position: 90% 95%
+
+# R によるデータ解析入門
+
+&lt;br&gt;
+## ソフトウェアカーペントリー日本&lt;br&gt;Beyond AI
+
+&lt;span style = 'font-size: 120%;'&gt;2021/04/02 &amp;ndash; 2021/04/16&lt;/span&gt;
+
+---
+
+# Day 1 アウトライン
+
+- RStudio入門
+
+- Rを計算機としての使用
+
+- 変数
+
+（休憩）
+
+- 関数
+
+- RStudioを使ったプロジェクト管理
+
+- ヘルプ機能
+
+---
+
+## チャレンジ
+
+以下のコードを実行した後、massとageの値は何でしょうか？
+
+.pull-left[
+
+```r
+mass &lt;- 47.5
+age &lt;- 122
+mass &lt;- mass * 2.3
+age &lt;- age - 20
+```
+
+
+]
+
+---
+
+## チャレンジ
+
+以下のコードを実行した後、massとageの値は何でしょうか？
+
+.pull-left[
+
+```r
+mass &lt;- 47.5
+age &lt;- 122
+mass &lt;- mass * 2.3
+age &lt;- age - 20
+```
+
+]
+.pull-right[
+**答え**
+
+```r
+mass
+```
+
+```
+## [1] 109.25
+```
+
+
+```r
+age
+```
+
+```
+## [1] 102
+```
+]
+
+---
+
+## RStudio によるプロジェクト管理
+
+よくあること：
+
+![](images/bad_layout.png)
+
+---
+
+## 問題
+
+1. データのバージョン（原本か修正版か）が分かりません
+
+2. コードのバージョンが分かりません
+
+3. 知りたい結果（図など）を探すのに時間がかかります
+
+4. 図とその図を出力するコードの対応が分かりません
+
+--
+
+以上の問題を解決することによって、**しばらく手をつけていなくても、簡単にプロジェクトを再開できる**
+
+---
+
+## RStudioで新しいプロジェクトを作成しましょう
+
+1. "File" メニューボタンをクリックし、"New Project"をクリック
+2. "New Directory"をクリック
+3. "Empty Project"をクリック
+4. プロジェクトを保存するディレクトリの名前をタイプ（例 "my_project"）
+5. 可能なら、"Create a git repository"のチェックボックスを選択
+6. "Create Project" ボタンをクリック
+
+---
+
+## プロジェクト管理の最適なやり方
+
+1. データは読み込み専用にしましょう
+
+2. 生成されたアウトプットを捨てても良いようにしましょう
+
+3. 関数定義と適用は別々にしましょう
+
+---
+
+## チャレンジ：データディレクトリにデータを保存する
+
+ギャップマインダーのデータを[ここから](https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_wide.csv)ダウンロードしましょう
+
+1. ファイルをダウンロードする（CTRL + S、右マウスクリック -&gt; 「名前を付けて保存する」、またはファイル -&gt;「ページを名前を付けて保存する」)
+
+2. 確実に `gapminder_data.csv` という名前で保存しましょう
+
+3. プロジェクトの中にある `data/` フォルダに保存しましょう
+
+このデータは後で読み込んで色々調べます
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

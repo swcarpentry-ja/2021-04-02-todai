@@ -1,0 +1,151 @@
+---
+title: ""
+subtitle: ""
+author: ""
+date: ""
+output:
+  xaringan::moon_reader:
+    css: ["default-fonts", "default", "custom.css"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: title-slide
+background-image:url(images/title-image.png)
+background-size: 35%
+background-position: 90% 95%
+
+# R によるデータ解析入門
+
+<br>
+## ソフトウェアカーペントリー日本<br>Beyond AI
+
+<span style = 'font-size: 120%;'>2021/04/02 &ndash; 2021/04/16</span>
+
+---
+
+# Day 1 アウトライン
+
+- RStudio入門
+
+- Rを計算機としての使用
+
+- 変数
+
+（休憩）
+
+- 関数
+
+- RStudioを使ったプロジェクト管理
+
+- ヘルプ機能
+
+---
+
+## チャレンジ
+
+以下のコードを実行した後、massとageの値は何でしょうか？
+
+.pull-left[
+```{r challenge-1-code-show, eval=FALSE}
+mass <- 47.5
+age <- 122
+mass <- mass * 2.3
+age <- age - 20
+```
+
+```{r challenge-1-code-run, include=FALSE}
+mass <- 47.5
+age <- 122
+mass <- mass * 2.3
+age <- age - 20
+```
+]
+
+---
+
+## チャレンジ
+
+以下のコードを実行した後、massとageの値は何でしょうか？
+
+.pull-left[
+```{r challenge-1-code-2, eval=FALSE}
+mass <- 47.5
+age <- 122
+mass <- mass * 2.3
+age <- age - 20
+```
+
+]
+.pull-right[
+**答え**
+```{r challenge-1-answer-mass}
+mass
+```
+
+```{r challenge-1-answer-age}
+age
+```
+]
+
+---
+
+## RStudio によるプロジェクト管理
+
+よくあること：
+
+![](images/bad_layout.png)
+
+---
+
+## 問題
+
+1. データのバージョン（原本か修正版か）が分かりません
+
+2. コードのバージョンが分かりません
+
+3. 知りたい結果（図など）を探すのに時間がかかります
+
+4. 図とその図を出力するコードの対応が分かりません
+
+--
+
+以上の問題を解決することによって、**しばらく手をつけていなくても、簡単にプロジェクトを再開できる**
+
+---
+
+## RStudioで新しいプロジェクトを作成しましょう
+
+1. "File" メニューボタンをクリックし、"New Project"をクリック
+2. "New Directory"をクリック
+3. "Empty Project"をクリック
+4. プロジェクトを保存するディレクトリの名前をタイプ（例 "my_project"）
+5. 可能なら、"Create a git repository"のチェックボックスを選択
+6. "Create Project" ボタンをクリック
+
+---
+
+## プロジェクト管理の最適なやり方
+
+1. データは読み込み専用にしましょう
+
+2. 生成されたアウトプットを捨てても良いようにしましょう
+
+3. 関数定義と適用は別々にしましょう
+
+---
+
+## チャレンジ：データディレクトリにデータを保存する
+
+ギャップマインダーのデータを[ここから](https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_wide.csv)ダウンロードしましょう
+
+1. ファイルをダウンロードする（CTRL + S、右マウスクリック -> 「名前を付けて保存する」、またはファイル ->「ページを名前を付けて保存する」)
+
+2. 確実に `gapminder_data.csv` という名前で保存しましょう
+
+3. プロジェクトの中にある `data/` フォルダに保存しましょう
+
+このデータは後で読み込んで色々調べます
