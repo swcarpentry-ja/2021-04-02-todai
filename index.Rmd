@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Rによるデータ解析入門"
 subtitle: ""
 author: ""
 date: ""
