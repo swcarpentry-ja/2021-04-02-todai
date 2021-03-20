@@ -5,7 +5,7 @@ author: ""
 date: ""
 output:
   xaringan::moon_reader:
-    css: ["default-fonts", "default", "custom.css"]
+    css: xaringan-themer.css
     lib_dir: libs
     seal: false
     nature:
@@ -13,17 +13,47 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-class: title-slide
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(xaringanthemer)
+library(tidyverse)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+# Set up slide theme
+style_mono_accent(
+  base_color = "#2B3990",
+  header_font_google = google_font("Noto Sans JP"),
+  text_font_google   = google_font("Noto Sans JP", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"),
+  text_font_size = "1.2em"
+)
+```
+
 background-image:url(images/title-image.png)
 background-size: 35%
 background-position: 90% 95%
 
 # R によるデータ解析入門
 
-<br>
-## ソフトウェアカーペントリー日本<br>Beyond AI
+### [ソフトウェアカーペントリー日本](https://swcarpentry-ja.github.io/)<br>[Beyond AI](https://beyondai.jp/)
 
 <span style = 'font-size: 120%;'>2021/04/02 &ndash; 2021/04/16</span>
+
+<br><br><img src="https://beyondai.jp/images/common/logo.svg" alt="drawing" height="75">
+
+---
+
+## 一日目 アウトライン
+
+- 自己紹介
+
+- ソフトウェアカーペントリーの紹介
+
+- ワークショップのやり方について
+
+- ソフトのインストール
 
 ---
 
@@ -59,7 +89,7 @@ background-position: 90% 95%
 
 - ３−４レッスンを教える（今回はRのみ）
 
-.center[<img src="https://4.bp.blogspot.com/-v-d7JYMZJn0/VvKZKMuZhzI/AAAAAAAA5FQ/p8m3U0QRZ8kI8mbkOv0uMEZrwT7F5Baiw/s450/seminor_woman.png" alt="drawing" height="300"/>]
+.center[<img src="https://4.bp.blogspot.com/-v-d7JYMZJn0/VvKZKMuZhzI/AAAAAAAA5FQ/p8m3U0QRZ8kI8mbkOv0uMEZrwT7F5Baiw/s450/seminor_woman.png" alt="drawing" height="250">]
 
 ---
 
@@ -73,11 +103,11 @@ background-position: 90% 95%
 
 - 改善のためのフィードバックは重視されている
 
-.center[<img src="https://software-carpentry.org/files/workshops/mit-2013-slice.jpg" alt="drawing" height="150"/>]
+.center[<img src="https://software-carpentry.org/files/workshops/mit-2013-slice.jpg" alt="drawing" height="150">]
 
 ---
 
-## ザ・カーペントリーズ The Carpentries
+## ザ・カーペントリーズ
 
 Data Carpentry, Library Carpentry, Software Carpentry
 
@@ -90,7 +120,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 - コミュニティーを一緒に支える方を探しています！
 
-.center[<img src="images/swc-ja-team.png" alt="drawing">]
+.center[<img src="images/swc-ja-team.png" alt="drawing" height="350">]
 
 ---
 ## 参加者大募集中
@@ -103,11 +133,11 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 - Meetup: 二ヶ月ごとにzoomで
 
-.center[<img src="https://4.bp.blogspot.com/-Q6dyWG9-rBs/UrlmwEb2YSI/AAAAAAAAcLc/uoaFgnGVfvo/s400/text_bosyuchu.png" alt="drawing" height="200"/>]
+.center[<img src="https://4.bp.blogspot.com/-Q6dyWG9-rBs/UrlmwEb2YSI/AAAAAAAAcLc/uoaFgnGVfvo/s400/text_bosyuchu.png" alt="drawing" height="200">]
 
 ---
 
-# Day 1 アウトライン
+## 二日目 アウトライン
 
 - RStudio入門
 
@@ -125,7 +155,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 ---
 
-## チャレンジ
+### チャレンジ
 
 以下のコードを実行した後、massとageの値は何でしょうか？
 
@@ -147,7 +177,7 @@ age <- age - 20
 
 ---
 
-## チャレンジ
+### チャレンジ
 
 以下のコードを実行した後、massとageの値は何でしょうか？
 
@@ -173,15 +203,15 @@ age
 
 ---
 
-## RStudio によるプロジェクト管理
+### RStudio によるプロジェクト管理
 
 よくあること：
 
-![](images/bad_layout.png)
+.center[<img src="images/bad_layout.png" alt="drawing" height="400">]
 
 ---
 
-## 問題
+### 問題
 
 1. データのバージョン（原本か修正版か）が分かりません
 
@@ -197,7 +227,7 @@ age
 
 ---
 
-## RStudioで新しいプロジェクトを作成しましょう
+### RStudioで新しいプロジェクトを作成しましょう
 
 1. "File" メニューボタンをクリックし、"New Project"をクリック
 2. "New Directory"をクリック
@@ -208,7 +238,7 @@ age
 
 ---
 
-## プロジェクト管理の最適なやり方
+### プロジェクト管理の最適なやり方
 
 1. データは読み込み専用にしましょう
 
@@ -218,7 +248,7 @@ age
 
 ---
 
-## チャレンジ：データディレクトリにデータを保存する
+### チャレンジ：データディレクトリにデータを保存する
 
 ギャップマインダーのデータを[ここから](https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_wide.csv)ダウンロードしましょう
 
