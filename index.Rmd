@@ -57,6 +57,28 @@ background-position: 90% 95%
 
 ---
 
+## 自己紹介
+
+.pull-left[
+ニッタ ジョエル
+
+@joel_nitta
+
+- 特任助教
+
+- 理学系岩崎研究室
+
+- 研究テーマ：シダ植物の進化、生態学、ゲノム解析
+
+- 趣味：マラソン
+]
+
+.pull-right[
+<img src="https://www.joelnitta.com/project/community_ecology/featured_hudf7b8620e192de66d79d1f7e36df7824_885020_540x0_resize_q75_lanczos.jpg" alt="drawing" height="300"/>
+]
+
+---
+
 ## Software Carpentry (SWC) とは？
 
 .middle[
@@ -134,6 +156,15 @@ Data Carpentry, Library Carpentry, Software Carpentry
 - Meetup: 二ヶ月ごとにzoomで
 
 .center[<img src="https://4.bp.blogspot.com/-Q6dyWG9-rBs/UrlmwEb2YSI/AAAAAAAAcLc/uoaFgnGVfvo/s400/text_bosyuchu.png" alt="drawing" height="200">]
+
+---
+## ソフトのインストール
+
+- [R](https://cloud.r-project.org/)
+
+- [RStudio](https://rstudio.com/products/rstudio/download)
+
+- [Zoom]()
 
 ---
 
