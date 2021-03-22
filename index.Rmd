@@ -47,7 +47,9 @@ background-position: 90% 95%
 
 ## 一日目 アウトライン
 
-- 自己紹介
+- B'AIの紹介
+
+- スタッフの紹介
 
 - ソフトウェアカーペントリーの紹介
 
@@ -57,7 +59,11 @@ background-position: 90% 95%
 
 ---
 
-## 自己紹介
+## B'AIの紹介
+
+---
+
+## スタッフの紹介
 
 .pull-left[
 ニッタ ジョエル
@@ -111,21 +117,7 @@ background-position: 90% 95%
 
 - ３−４レッスンを教える（今回はRのみ）
 
-.center[<img src="https://4.bp.blogspot.com/-v-d7JYMZJn0/VvKZKMuZhzI/AAAAAAAA5FQ/p8m3U0QRZ8kI8mbkOv0uMEZrwT7F5Baiw/s450/seminor_woman.png" alt="drawing" height="250">]
-
----
-
-## ワークショップ
-
-- 誰でも参加できる
-
-- 無料か少額
-
-- ワークショップ前後にアンケートを実施
-
-- 改善のためのフィードバックは重視されている
-
-.center[<img src="https://software-carpentry.org/files/workshops/mit-2013-slice.jpg" alt="drawing" height="150">]
+.center[<img src="https://software-carpentry.org/files/workshops/mit-2013-slice.jpg" alt="drawing" height="200">]
 
 ---
 
@@ -158,13 +150,29 @@ Data Carpentry, Library Carpentry, Software Carpentry
 .center[<img src="https://4.bp.blogspot.com/-Q6dyWG9-rBs/UrlmwEb2YSI/AAAAAAAAcLc/uoaFgnGVfvo/s400/text_bosyuchu.png" alt="drawing" height="200">]
 
 ---
+## SWCワークショップの流れ
+
+- スライドによる内容の説明
+
+- **ライブコーディング**
+
+---
+## ライブコーディングとは？
+
+- インストラクターが打っていると同じコードを同時に自分のパソコンで打って行く
+
+- 何か問題があった時に**声をかける**
+
+- ヘルパーあるいはインストラクターが問題を解決するのに手伝う
+
+---
 ## ソフトのインストール
 
 - [R](https://cloud.r-project.org/)
 
 - [RStudio](https://rstudio.com/products/rstudio/download)
 
-- [Zoom]()
+- [Zoom](https://zoom.us/jp-jp/home.html)
 
 ---
 
