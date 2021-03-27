@@ -5,6 +5,7 @@ author: ""
 date: ""
 output:
   xaringan::moon_reader:
+    self_contained: true
     css: xaringan-themer.css
     lib_dir: libs
     seal: false
@@ -83,6 +84,28 @@ background-position: 90% 95%
 
 .pull-right[
 <img src="https://www.joelnitta.com/project/community_ecology/featured_hudf7b8620e192de66d79d1f7e36df7824_885020_540x0_resize_q75_lanczos.jpg" alt="drawing" height="300"/>
+]
+
+---
+
+## スタッフの紹介
+
+.pull-left[
+武井陸良
+
+@rikutakei
+
+- 研究員
+
+- アラバマ大学バーミンガム校
+
+- 研究テーマ：痛風の遺伝要因、ゲノム解析
+
+- 趣味：ロッククライミング
+]
+
+.pull-right[
+![](images/riku_pic.jpeg)
 ]
 
 ---
@@ -190,6 +213,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 - ヘルパーあるいはインストラクターが問題を解決するのに手伝う
 
 ---
+
 ## ライブコーディングとは？
 
 - インストラクターが参加者の理解を確認する（「〜が出来ましたか？」）
@@ -199,6 +223,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 .center[<img src="images/zoom_reactions.png" alt="drawing" height="200">]
 
 ---
+
 ## Ice breaker
 
 ４−５人ずつブレークアウトルームで自己紹介しましょう
@@ -208,6 +233,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 - 趣味は何ですか？
 
 ---
+
 ## ソフトのインストール
 
 - **R** https://cloud.r-project.org/
@@ -239,6 +265,48 @@ Data Carpentry, Library Carpentry, Software Carpentry
 - RStudioを使ったプロジェクト管理
 
 - ヘルプ機能
+
+---
+
+## なぜRを使うのか
+
+- 無料だから
+
+- パッケージが豊富
+
+- Rコードを使うことによって統計解析の再現性が上がる
+
+---
+
+## RStudioって何？
+
+- 総合開発環境（IDE - Integrated Development Environment）
+
+- コードを書く場所（エディタ）とそれを実行するプログラム（R）が合わさったソフトウェアのこと
+
+- プロジェクト管理など、他にも便利機能がついています
+
+---
+
+### チャレンジ
+
+以下の変数名のうち、Rで使える変数名はどれでしょう？（複数可）
+
+1. min-height
+2. max.height
+3. _age
+4. celsius2kelvin
+5. MaxLength
+
+---
+
+### 答え
+
+1. ~~min-height~~
+2. **max.height**
+3. ~~_age~~
+4. **celsius2kelvin**
+5. **MaxLength**
 
 ---
 
