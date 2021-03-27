@@ -91,7 +91,7 @@ background-position: 90% 95%
 ## スタッフの紹介
 
 .pull-left[
-武井陸良
+武井陸良（インストラクター）
 
 @rikutakei
 
