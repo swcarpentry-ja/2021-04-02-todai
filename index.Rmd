@@ -28,7 +28,8 @@ style_mono_accent(
   header_font_google = google_font("Noto Sans JP"),
   text_font_google   = google_font("Noto Sans JP", "300", "300i"),
   code_font_google   = google_font("Fira Mono"),
-  text_font_size = "1.2em"
+  text_font_size = "1.2em",
+  link_color = "#F95D9B"
 )
 ```
 
@@ -38,7 +39,7 @@ background-position: 90% 95%
 
 # R によるデータ解析入門
 
-### [ソフトウェアカーペントリー日本](https://swcarpentry-ja.github.io/)<br>[Beyond AI](https://beyondai.jp/)
+### ソフトウェアカーペントリー日本<br>Beyond AI
 
 <span style = 'font-size: 120%;'>2021/04/02 &ndash; 2021/04/16</span>
 
@@ -127,7 +128,7 @@ background-position: 90% 95%
 ]
 
 .pull-right[
-<img src="http://bioconductor.org/images/cab/kozo.png" alt="drawing" height="300"/>
+<img src="http://bioconductor.org/images/cab/kozo.png" alt="drawing" height="250"/>
 ]
 
 ---
@@ -208,19 +209,56 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 - インストラクターが打っていると同じコードを同時に自分のパソコンで打って行く
 
-- 何か問題があった時に**声をかける**
-
-- ヘルパーあるいはインストラクターが問題を解決するのに手伝う
-
----
-
-## ライブコーディングとは？
+--
 
 - インストラクターが参加者の理解を確認する（「〜が出来ましたか？」）
 
 - zoomの「反応」をクリック→「はい」、「いいえ」　
 
 .center[<img src="images/zoom_reactions.png" alt="drawing" height="200">]
+
+---
+## ライブコーディングとは？
+
+何か問題があった時に**声をかける**
+
+- zoomの「反応」をクリック→「手を挙げる」
+
+あるい（また）は
+
+- zoomのチャットに質問を投げる
+
+.center[<img src="images/zoom_reactions_hand.png" alt="drawing" height="200">]
+
+---
+## ライブコーディングとは？
+
+フィードバックの種類
+
+- クイズ（zoomの投票機能）
+
+- 感想（グーグルフォーム）
+
+- ディスカッション（ブレークアウトルーム）
+
+---
+## Zoomの使い方のお願い
+
+.pull-left[
+- カメラを常にオン
+
+- 名前の変更
+  - 例：東大 太郎（理学部 M2）
+  - インストラクター、ヘルパー、見学に来ている方はそのステータスを記入
+]
+
+.pull-right[
+.center[<img src="images/zoom_name_change.png" alt="drawing">]
+
+.center[<img src="images/zoom_menu.png" alt="drawing" height="50">]
+]
+
+**積極的に発言してください！**`r emo::ji("slightly smiling face")`
 
 ---
 
@@ -363,6 +401,14 @@ age
 よくあること：
 
 .center[<img src="images/bad_layout.png" alt="drawing" height="400">]
+
+---
+
+### RStudio によるプロジェクト管理
+
+よくあること：
+
+.center[<img src="images/bad_layout_zoom.png" alt="drawing" height="400">]
 
 ---
 
