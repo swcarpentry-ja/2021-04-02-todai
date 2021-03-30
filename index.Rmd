@@ -132,8 +132,6 @@ background-position: 90% 95%
 ]
 
 ---
-
----
 ## スタッフの紹介
 
 .pull-left[
