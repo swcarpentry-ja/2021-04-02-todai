@@ -356,19 +356,33 @@ Data Carpentry, Library Carpentry, Software Carpentry
 5. MaxLength
 
 ---
+### 関数とは？
 
+何かの値（インプット）を受けて、処理して、計算結果（アウトプット）を返すもの
+
+.center[<img src="https://manamina.valuesccg.com/uploads/content/image/12292/__.png" alt="drawing" height="100">]
+
+.footnote[https://manamina.valuesccg.com/articles/756]
+
+---
+### 関数とは？
+
+関数の書き方：
+
+`関数名(引数)`
+
+関数の例：`print()`、`paste()`
+
+---
 ### チャレンジ
 
-以下のコードを実行した後、massとageの値は何でしょうか？
+`toupper`はインプットの文字列を大文字にする関数です。`toupper`を使った、私の名前（"joel"）を大文字にするコードはどれが正しいでしょうか？
 
-.pull-left[
-```{r challenge-1-code-show, eval=FALSE}
-mass <- 47.5
-age <- 122
-mass <- mass * 2.3
-age <- age - 20
-```
-]
+1. `toupper["joel"]`
+2. `toupper(joel)`
+3. `toUpper("joel")`
+4. `toupper("joel")`
+5. `toupper, "joel"`
 
 ---
 
