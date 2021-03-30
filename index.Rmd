@@ -109,6 +109,28 @@ background-position: 90% 95%
 ![](images/riku_pic.jpeg)
 ]
 
+
+---
+## スタッフの紹介
+
+.pull-left[
+ケリートム（ヘルパー）
+
+@tomkxy
+
+- 研究員(ポスドク)
+
+- 理化学研究所 生命医科学研究センター
+
+- 研究テーマ：多能性幹細胞、がんゲノム解析、シングルセルRNA解析
+
+- 趣味：日本語を勉強、映画、旅行
+]
+
+.pull-right[
+<img src="images/tom_profile.jpg" alt="drawing" height="300">
+]
+
 ---
 ## スタッフの紹介
 
