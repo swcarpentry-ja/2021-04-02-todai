@@ -357,16 +357,6 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 ---
 
-### 答え
-
-1. ~~min-height~~
-2. **max.height**
-3. ~~_age~~
-4. **celsius2kelvin**
-5. **MaxLength**
-
----
-
 ### チャレンジ
 
 以下のコードを実行した後、massとageの値は何でしょうか？
@@ -377,39 +367,6 @@ mass <- 47.5
 age <- 122
 mass <- mass * 2.3
 age <- age - 20
-```
-
-```{r challenge-1-code-run, include=FALSE}
-mass <- 47.5
-age <- 122
-mass <- mass * 2.3
-age <- age - 20
-```
-]
-
----
-
-### チャレンジ
-
-以下のコードを実行した後、massとageの値は何でしょうか？
-
-.pull-left[
-```{r challenge-1-code-2, eval=FALSE}
-mass <- 47.5
-age <- 122
-mass <- mass * 2.3
-age <- age - 20
-```
-
-]
-.pull-right[
-**答え**
-```{r challenge-1-answer-mass}
-mass
-```
-
-```{r challenge-1-answer-age}
-age
 ```
 ]
 
