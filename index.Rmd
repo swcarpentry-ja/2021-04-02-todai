@@ -128,7 +128,7 @@ background-position: 90% 95%
 ]
 
 .pull-right[
-<img src="images/tom_profile.png" alt="drawing" height="400">
+<img src="images/tom_profile.jpg" alt="drawing" height="300">
 ]
 
 ---
