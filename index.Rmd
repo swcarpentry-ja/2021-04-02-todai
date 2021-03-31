@@ -277,6 +277,20 @@ Data Carpentry, Library Carpentry, Software Carpentry
 .center[<img src="images/zoom_reactions_hand.png" alt="drawing" height="200">]
 
 ---
+## コラボレイティブ・ノート
+
+[Googleドキュメント](https://docs.google.com/document/d/1G11-8sXl5hbb71ky-YmeHpDvPWXkp0Y-Q65V-59-z78/edit#heading=h.414fvxu27my1)にコードを貼っておきます。
+
+もしインストラクターが進んで、コードが見えなくなったら、<br>Googleドキュメントを参照してください。
+
+### 参加者も自由に書き込んでいいです
+
+---
+## 画面設定のおすすめ
+
+![](images/example_screen.png)
+
+---
 ## フィードバックの種類
 
 - クイズ（zoomの投票機能）
