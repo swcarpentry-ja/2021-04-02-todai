@@ -29,7 +29,10 @@ style_mono_accent(
   text_font_google   = google_font("Noto Sans JP", "300", "300i"),
   code_font_google   = google_font("Fira Mono"),
   text_font_size = "1.2em",
-  link_color = "#F95D9B"
+  link_color = "#F95D9B",
+  extra_css = list(
+    ".grey" = list("color" = "grey")
+  )
 )
 ```
 
