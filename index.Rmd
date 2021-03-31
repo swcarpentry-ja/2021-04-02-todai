@@ -378,6 +378,15 @@ Data Carpentry, Library Carpentry, Software Carpentry
 5. MaxLength
 
 ---
+### 答え
+
+1. ~~min-height~~
+2. **max.height**
+3. ~~_age~~
+4. **celsius2kelvin**
+5. **MaxLength**
+
+---
 ### 関数とは？
 
 何かの値（インプット）を受けて、処理して、計算結果（アウトプット）を返すもの
@@ -405,6 +414,17 @@ Data Carpentry, Library Carpentry, Software Carpentry
 3. `toUpper("joel")`
 4. `toupper("joel")`
 5. `toupper, "joel"`
+
+---
+### 答え
+
+`toupper`はインプットの文字列を大文字にする関数です。`toupper`を使った、私の名前（"joel"）を大文字にするコードはどれが正しいでしょうか？
+
+1. ~~`toupper["joel"]`~~
+2. ~~`toupper(joel)`~~
+3. ~~`toUpper("joel")`~~
+4. **`toupper("joel")`**
+5. ~~`toupper, "joel"`~~
 
 ---
 
