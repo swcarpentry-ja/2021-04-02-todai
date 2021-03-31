@@ -397,9 +397,11 @@ background-size: contain
 ---
 ### 答え
 
-1. ~~min-height~~
+以下の変数名のうち、Rで使える変数名はどれでしょう？（複数可）
+
+1. .grey[min-height]
 2. **max.height**
-3. ~~_age~~
+3. .grey[_age]
 4. **celsius2kelvin**
 5. **MaxLength**
 
@@ -426,22 +428,22 @@ background-size: contain
 
 `toupper`はインプットの文字列を大文字にする関数です。`toupper`を使った、私の名前（"joel"）を大文字にするコードはどれが正しいでしょうか？
 
-1. `toupper["joel"]`
-2. `toupper(joel)`
-3. `toUpper("joel")`
-4. `toupper("joel")`
-5. `toupper, "joel"`
+1. toupper["joel"]
+2. toupper(joel)
+3. toUpper("joel")
+4. toupper("joel")
+5. toupper, "joel"
 
 ---
 ### 答え
 
 `toupper`はインプットの文字列を大文字にする関数です。`toupper`を使った、私の名前（"joel"）を大文字にするコードはどれが正しいでしょうか？
 
-1. ~~`toupper["joel"]`~~
-2. ~~`toupper(joel)`~~
-3. ~~`toUpper("joel")`~~
-4. **`toupper("joel")`**
-5. ~~`toupper, "joel"`~~
+1. .grey[toupper["joel"]]
+2. .grey[toupper(joel)]
+3. .grey[toUpper("joel")]
+4. **toupper("joel")**
+5. .grey[toupper, "joel"]
 
 ---
 
