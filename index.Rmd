@@ -64,6 +64,8 @@ background-position: 90% 95%
 
 - ソフトのインストール
 
+**ワークショップの録画・録音・撮影・スクリーンショット等は<br>ご遠慮ください**
+
 ---
 
 ## B'AIの紹介
@@ -91,7 +93,6 @@ background-position: 90% 95%
 ]
 
 ---
-
 ## スタッフの紹介
 
 .pull-left[
@@ -111,7 +112,6 @@ background-position: 90% 95%
 .pull-right[
 ![](images/riku_pic.jpeg)
 ]
-
 
 ---
 ## スタッフの紹介
@@ -258,7 +258,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 ---
 ## ライブコーディングとは？
 
-- インストラクターが打っていると同じコードを同時に自分のパソコンで打って行く
+- インストラクターが打っていると同じコードを同時に自分のパソコンで打っていく
 
 --
 
@@ -306,6 +306,8 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 - 感想（googleフォーム）
 
+- ワークショップ前後の[アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2021-04-02-todai-online-ja)
+
 ---
 ## Zoomの使い方のお願い
 
@@ -333,6 +335,8 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 - どうやってRを知りましたか？
 
+- 研究テーマは何ですか？
+
 - 趣味は何ですか？
 
 ---
@@ -348,6 +352,8 @@ Data Carpentry, Library Carpentry, Software Carpentry
 - **tidyverse**
 
   - `install.packages("tidyverse")`
+
+[ワークショップのホームページ](https://swcarpentry-ja.github.io/2021-04-02-todai-online-ja/)
 
 ---
 
