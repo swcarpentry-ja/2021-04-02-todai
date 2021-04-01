@@ -242,6 +242,13 @@ Data Carpentry, Library Carpentry, Software Carpentry
 .center[<img src="https://4.bp.blogspot.com/-Q6dyWG9-rBs/UrlmwEb2YSI/AAAAAAAAcLc/uoaFgnGVfvo/s400/text_bosyuchu.png" alt="drawing" height="200">]
 
 ---
+## 行動規範
+
+どなたでも気兼ねなくワークショップに参加できるように、[行動規範](https://carpentries-coc.readthedocs.io/ja/latest/topic_folders/policies/code-of-conduct.html)があります。
+
+行動規範に反する行為があった場合は、[インシデントレポートフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeYqO37p0P-5JsEoF-E_edpZM5iRdFxWHTFqILo6LzqGS33YQ/viewform?fbzx=-8556883400541824673)で報告することができます。
+
+---
 ## SWCワークショップの流れ
 
 - スライドによる内容の説明
@@ -295,9 +302,9 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 - クイズ（zoomの投票機能）
 
-- 感想（グーグルフォーム、グーグルドック）
-
 - ディスカッション（ブレークアウトルーム）
+
+- 感想（googleフォーム）
 
 ---
 ## Zoomの使い方のお願い
@@ -333,8 +340,6 @@ Data Carpentry, Library Carpentry, Software Carpentry
 ## ソフトのインストール
 
 - **R** https://cloud.r-project.org/
-
-  - `R.version.string`を打って、結果をチャットに貼ってください
 
 - **RStudio** https://rstudio.com/products/rstudio/download
 
