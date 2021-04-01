@@ -176,6 +176,61 @@ background-position: 90% 95%
 ]
 
 ---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-0.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-1.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-2.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-3.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-4.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-5.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-6.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-7.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-8.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-9.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-10.png)
+background-position: center
+background-size: contain
+
+---
 ## 行動規範
 
 どなたでも気兼ねなくワークショップに参加できるように、[行動規範](https://carpentries-coc.readthedocs.io/ja/latest/topic_folders/policies/code-of-conduct.html)があります。
