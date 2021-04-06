@@ -67,12 +67,11 @@ background-position: 90% 95%
 **ワークショップの録画・録音・撮影・スクリーンショット等は<br>ご遠慮ください**
 
 ---
-
 ## B'AIの紹介
 
 ---
 
-## スタッフの紹介
+### スタッフの紹介
 
 .pull-left[
 ニッタ ジョエル（インストラクター）
@@ -93,7 +92,7 @@ background-position: 90% 95%
 ]
 
 ---
-## スタッフの紹介
+### スタッフの紹介
 
 .pull-left[
 武井陸良（インストラクター）
@@ -114,7 +113,7 @@ background-position: 90% 95%
 ]
 
 ---
-## スタッフの紹介
+### スタッフの紹介
 
 .pull-left[
 ケリートム（ヘルパー）
@@ -135,7 +134,7 @@ background-position: 90% 95%
 ]
 
 ---
-## スタッフの紹介
+### スタッフの紹介
 
 .pull-left[
 西田 孝三（ヘルパー）
@@ -156,7 +155,8 @@ background-position: 90% 95%
 ]
 
 ---
-## スタッフの紹介
+### スタッフの紹介
+
 .pull-left[
 山口雅美（ヘルパー）
 
@@ -231,21 +231,21 @@ background-position: center
 background-size: contain
 
 ---
-## 行動規範
+### 行動規範
 
 どなたでも気兼ねなくワークショップに参加できるように、[行動規範](https://carpentries-coc.readthedocs.io/ja/latest/topic_folders/policies/code-of-conduct.html)があります。
 
 行動規範に反する行為があった場合は、[インシデントレポートフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeYqO37p0P-5JsEoF-E_edpZM5iRdFxWHTFqILo6LzqGS33YQ/viewform?fbzx=-8556883400541824673)で報告することができます。
 
 ---
-## SWCワークショップの流れ
+### SWCワークショップの流れ
 
 - スライドによる内容の説明
 
 - **ライブコーディング**
 
 ---
-## ライブコーディングとは？
+### ライブコーディングとは？
 
 - インストラクターが打っていると同じコードを同時に自分のパソコンで打っていく
 
@@ -258,7 +258,7 @@ background-size: contain
 .center[<img src="images/zoom_reactions.png" alt="drawing" height="200">]
 
 ---
-## ライブコーディングとは？
+### ライブコーディングとは？
 
 何か問題があった時に**声をかける**
 
@@ -273,7 +273,7 @@ background-size: contain
 .center[<img src="images/zoom_reactions_hand.png" alt="drawing" height="200">]
 
 ---
-## コラボレイティブ・ノート
+### コラボレイティブ・ノート
 
 [Googleドキュメント](https://docs.google.com/document/d/1G11-8sXl5hbb71ky-YmeHpDvPWXkp0Y-Q65V-59-z78/edit#heading=h.414fvxu27my1)にコードを貼っておきます。
 
@@ -282,12 +282,12 @@ background-size: contain
 ### 参加者も自由に書き込んでいいです
 
 ---
-## 画面設定のおすすめ
+### 画面設定のおすすめ
 
 ![](images/example_screen.png)
 
 ---
-## フィードバックの種類
+### フィードバックの種類
 
 - クイズ（zoomの投票機能）
 
@@ -298,7 +298,7 @@ background-size: contain
 - ワークショップ前後の[アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2021-04-02-todai-online-ja)
 
 ---
-## Zoomの使い方のお願い
+### Zoomの使い方のお願い
 
 .pull-left[
 - カメラを常にオン
@@ -318,7 +318,7 @@ background-size: contain
 
 ---
 
-## Ice breaker
+### Ice breaker
 
 ４−５人ずつブレークアウトルームで自己紹介しましょう
 
@@ -330,7 +330,7 @@ background-size: contain
 
 ---
 
-## ソフトのインストール
+### ソフトのインストール
 
 - **R** https://cloud.r-project.org/
 
@@ -348,6 +348,8 @@ background-size: contain
 
 ## 二日目 アウトライン
 
+- 一日目のおさらい
+
 - RStudio入門
 
 - Rを計算機としての使用
@@ -363,8 +365,14 @@ background-size: contain
 - RStudioを使ったプロジェクト管理
 
 ---
+### 一日目のおさらい
 
-## なぜRを使うのか
+Zoomのバージョンによっては反応ボタンを再度押す必要があるかもしれません
+
+.center[<img src="images/zoom_reactions.png" alt="drawing" height="200">]
+
+---
+### なぜRを使うのか
 
 - 無料だから
 
@@ -373,8 +381,7 @@ background-size: contain
 - Rコードを使うことによって統計解析の再現性が上がる
 
 ---
-
-## RStudioって何？
+### RStudioって何？
 
 - 総合開発環境（IDE - Integrated Development Environment）
 
@@ -383,7 +390,6 @@ background-size: contain
 - プロジェクト管理など、他にも便利機能がついています
 
 ---
-
 ### チャレンジ
 
 以下の変数名のうち、Rで使える変数名はどれでしょう？（複数可）
@@ -439,7 +445,6 @@ background-size: contain
 - Rを立ち上げる度にする必要あり
 
 ---
-
 ### RStudio によるプロジェクト管理
 
 よくあること：
@@ -447,7 +452,6 @@ background-size: contain
 .center[<img src="images/bad_layout.png" alt="drawing" height="400">]
 
 ---
-
 ### RStudio によるプロジェクト管理
 
 よくあること：
@@ -455,7 +459,6 @@ background-size: contain
 .center[<img src="images/bad_layout_zoom.png" alt="drawing" height="400">]
 
 ---
-
 ### 問題
 
 1. データのバージョン（原本か修正版か）が分かりません
@@ -469,33 +472,18 @@ background-size: contain
 以上の問題を解決することによって、**しばらく手をつけていなくても、簡単にプロジェクトを再開できる**
 
 ---
-
-### RStudioで新しいプロジェクトを作成しましょう
+### RStudioで新しいプロジェクトを作りましょう
 
 1. "File" メニューボタンをクリックし、"New Project"をクリック
 2. "New Directory"をクリック
 3. "Empty Project"をクリック
-4. プロジェクトを保存するディレクトリの名前をタイプ（例 "my_project"）
-5. 可能なら、"Create a git repository"のチェックボックスを選択
-6. "Create Project" ボタンをクリック
+4. プロジェクトを保存するディレクトリの名前を入力（例 "todai-r-workshop"）
+5. "Create Project" ボタンをクリック
 
 ---
+### データディレクトリにデータを保存する
 
-### プロジェクト管理の最適なやり方
-
-1. データは読み込み専用にしましょう
-
-2. 生成されたアウトプットを捨てても良いようにしましょう
-
-3. コメントでコードのメモを書きましょう
-
-4. READMEファイルでプロジェクトのメモを書きましょう
-
----
-
-### チャレンジ：データディレクトリにデータを保存する
-
-ギャップマインダーのデータを[ここから](https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_wide.csv)ダウンロードしましょう
+ギャップマインダーのデータを[ここから](https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_data.csv)ダウンロードしましょう
 
 1. ファイルをダウンロードする（CTRL + S、右マウスクリック -> 「名前を付けて保存する」、またはファイル ->「ページを名前を付けて保存する」)
 
@@ -504,3 +492,51 @@ background-size: contain
 3. プロジェクトの中にある `data/` フォルダに保存しましょう
 
 このデータは後で読み込んで色々調べます
+
+---
+### Gapminderとは？
+
+.pull-left[
+様々な国の経済的な指標が<br>入っているデータセット
+
+- https://www.gapminder.org/
+- [Ted Talk](https://www.ted.com/talks/hans_rosling_let_my_dataset_change_your_mindset)
+- [Ted Talkの翻訳](http://www.aoky.net/articles/hans_rosling/hans_rosling_at_state.htm)
+]
+
+.pull-right[
+```{r plot-gapminder, echo=FALSE, message=FALSE, fig.retina=3}
+library(tidyverse)
+
+read_csv("data/gapminder_data.csv") %>%
+  filter(year == 1997) %>%
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
+  scale_x_log10() +
+  geom_point() +
+  theme(
+    legend.position="bottom", 
+    legend.box="vertical", 
+    legend.margin=margin()
+  )
+```
+]
+
+---
+### プロジェクト管理の最適なやり方
+
+1. データ入力とデータ解析を分けましょう
+
+2. データは読み込み専用にしましょう
+
+3. 生成されたアウトプットを捨てても良いようにしましょう
+
+4. コメントとREADMEファイルでメモを書きましょう
+
+---
+### フィードバック
+
+[このリンク](https://docs.google.com/forms/d/e/1FAIpQLSd9Xwa2wK8xqBipbRy1kWQZ7LFAMSBMhy2ccrMo-XR3o71pBg/viewform)を使って、下の二つを教えてください：
+
+- 今日のワークショップでうまく行ったこと
+
+- 今日のワークショップであまりうまく行かなかったこと
