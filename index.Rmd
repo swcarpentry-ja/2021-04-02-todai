@@ -372,6 +372,29 @@ Zoomのバージョンによっては反応ボタンを再度押す必要があ�
 .center[<img src="images/zoom_reactions.png" alt="drawing" height="200">]
 
 ---
+### スタッフの紹介
+
+.pull-left[
+横田聡（ヘルパー）
+
+@megane0_0
+
+- 眼科医、客員研究員
+
+- 神戸アイセンター病院
+
+- カーペントリーズの<br>インストラクター
+
+- 研究テーマ：緑内障、<br>網膜変性疾患
+
+- 趣味：ゲーム
+]
+
+.pull-right[
+.center[<img src="images/yokota.jpg" alt="drawing" height="250">]
+]
+
+---
 ### なぜRを使うのか
 
 - 無料だから
