@@ -348,6 +348,8 @@ background-size: contain
 
 ## 二日目 アウトライン
 
+- 一日目のおさらい
+
 - RStudio入門
 
 - Rを計算機としての使用
@@ -363,7 +365,13 @@ background-size: contain
 - RStudioを使ったプロジェクト管理
 
 ---
+## 一日目のおさらい
 
+Zoomのバージョンによっては反応ボタンを再度押す必要があるかもしれません
+
+.center[<img src="images/zoom_reactions.png" alt="drawing" height="200">]
+
+---
 ## なぜRを使うのか
 
 - 無料だから
@@ -373,7 +381,6 @@ background-size: contain
 - Rコードを使うことによって統計解析の再現性が上がる
 
 ---
-
 ## RStudioって何？
 
 - 総合開発環境（IDE - Integrated Development Environment）
@@ -383,7 +390,6 @@ background-size: contain
 - プロジェクト管理など、他にも便利機能がついています
 
 ---
-
 ### チャレンジ
 
 以下の変数名のうち、Rで使える変数名はどれでしょう？（複数可）
@@ -461,7 +467,6 @@ background-size: contain
 - Rを立ち上げる度にする必要あり
 
 ---
-
 ### RStudio によるプロジェクト管理
 
 よくあること：
@@ -469,7 +474,6 @@ background-size: contain
 .center[<img src="images/bad_layout.png" alt="drawing" height="400">]
 
 ---
-
 ### RStudio によるプロジェクト管理
 
 よくあること：
@@ -477,7 +481,6 @@ background-size: contain
 .center[<img src="images/bad_layout_zoom.png" alt="drawing" height="400">]
 
 ---
-
 ### 問題
 
 1. データのバージョン（原本か修正版か）が分かりません
@@ -491,7 +494,6 @@ background-size: contain
 以上の問題を解決することによって、**しばらく手をつけていなくても、簡単にプロジェクトを再開できる**
 
 ---
-
 ### RStudioで新しいプロジェクトを作成しましょう
 
 1. "File" メニューボタンをクリックし、"New Project"をクリック
@@ -502,20 +504,7 @@ background-size: contain
 6. "Create Project" ボタンをクリック
 
 ---
-
-### プロジェクト管理の最適なやり方
-
-1. データは読み込み専用にしましょう
-
-2. 生成されたアウトプットを捨てても良いようにしましょう
-
-3. コメントでコードのメモを書きましょう
-
-4. READMEファイルでプロジェクトのメモを書きましょう
-
----
-
-### チャレンジ：データディレクトリにデータを保存する
+### データディレクトリにデータを保存する
 
 ギャップマインダーのデータを[ここから](https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_wide.csv)ダウンロードしましょう
 
@@ -526,6 +515,17 @@ background-size: contain
 3. プロジェクトの中にある `data/` フォルダに保存しましょう
 
 このデータは後で読み込んで色々調べます
+
+---
+### プロジェクト管理の最適なやり方
+
+1. データは読み込み専用にしましょう
+
+2. 生成されたアウトプットを捨てても良いようにしましょう
+
+3. コメントとREADMEファイルでメモを書きましょう
+
+4. データ入力とデータ解析を分けましょう
 
 ---
 
