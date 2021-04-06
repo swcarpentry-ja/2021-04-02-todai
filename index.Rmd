@@ -395,17 +395,6 @@ background-size: contain
 5. MaxLength
 
 ---
-### 答え
-
-以下の変数名のうち、Rで使える変数名はどれでしょう？（複数可）
-
-1. .grey[min-height]
-2. **max.height**
-3. .grey[_age]
-4. **celsius2kelvin**
-5. **MaxLength**
-
----
 ### 関数とは？
 
 何かの値（インプット）を受けて、処理して、計算結果（アウトプット）を返すもの
@@ -433,17 +422,6 @@ background-size: contain
 3. toUpper("joel")
 4. toupper("joel")
 5. toupper, "joel"
-
----
-### 答え
-
-`toupper`はインプットの文字列を大文字にする関数です。`toupper`を使った、私の名前（"joel"）を大文字にするコードはどれが正しいでしょうか？
-
-1. .grey[toupper["joel"]]
-2. .grey[toupper(joel)]
-3. .grey[toUpper("joel")]
-4. **toupper("joel")**
-5. .grey[toupper, "joel"]
 
 ---
 ### パッケージとは？
@@ -526,54 +504,3 @@ background-size: contain
 3. プロジェクトの中にある `data/` フォルダに保存しましょう
 
 このデータは後で読み込んで色々調べます
-
----
-
-## 三日目 アウトライン
-
-- 二日目のおさらい
-
-- データ型について
-
-- ベクトルの使い方１
-
-（休憩）
-
-- ベクトルの使い方２
-
-- データフレームの使い方
-
-- データフレームからデータを抜き出す
-
----
-
-## 四日目 アウトライン
-
-- 三日目のおさらい
-
-- `filter()`、`select()`、`mutate()`関数を使ってみる
-
-- `group_by()`と`summarise()`関数を使って基本的な計算をしてみる
-
-（休憩）
-
-- `ggplot2`パッケージについて
-
-- レイヤーの仕組み
-
-- `ggplot()`関数を使って図を作成してみる
-
----
-
-## 五日目 アウトライン
-
-- 四日目のおさらい
-
-- グループ別に色や形を変えてみる
-
-- `ggsave()`関数で図を保存する
-
-（休憩）
-
-- `rmarkdown`でレポートを作成する（仮）
-
