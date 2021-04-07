@@ -64,13 +64,14 @@ background-position: 90% 95%
 
 - ソフトのインストール
 
----
+**ワークショップの録画・録音・撮影・スクリーンショット等は<br>ご遠慮ください**
 
+---
 ## B'AIの紹介
 
 ---
 
-## スタッフの紹介
+### スタッフの紹介
 
 .pull-left[
 ニッタ ジョエル（インストラクター）
@@ -91,8 +92,7 @@ background-position: 90% 95%
 ]
 
 ---
-
-## スタッフの紹介
+### スタッフの紹介
 
 .pull-left[
 武井陸良（インストラクター）
@@ -112,9 +112,8 @@ background-position: 90% 95%
 ![](images/riku_pic.jpeg)
 ]
 
-
 ---
-## スタッフの紹介
+### スタッフの紹介
 
 .pull-left[
 ケリートム（ヘルパー）
@@ -135,7 +134,7 @@ background-position: 90% 95%
 ]
 
 ---
-## スタッフの紹介
+### スタッフの紹介
 
 .pull-left[
 西田 孝三（ヘルパー）
@@ -156,7 +155,8 @@ background-position: 90% 95%
 ]
 
 ---
-## スタッフの紹介
+### スタッフの紹介
+
 .pull-left[
 山口雅美（ヘルパー）
 
@@ -176,82 +176,78 @@ background-position: 90% 95%
 ]
 
 ---
-
-## Software Carpentry (SWC) とは？
-
-.middle[
-- 無償でコードを教えるワークショップ
-
-- ボランティアによって運営されている
-
-- 研究者にコードのベストプラクティスを教える
-]
-
-![](images/swc_header.png)
-
-.center[https://software-carpentry.org/]
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-0.png)
+background-position: center
+background-size: contain
 
 ---
-
-### アメリカをはじめ、様々な国で実施
-
-![](images/map.png)
-
----
-
-## ワークショップ
-
-- 研究者が**コミュニティを作って**、互いに教え合う
-
-- フィードバックを重視する
-
-- 二日間にわたるワークショップ
-
-- ３−４レッスンを教える（今回はRのみ）
-
-.center[<img src="https://software-carpentry.org/files/workshops/mit-2013-slice.jpg" alt="drawing" height="200">]
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-1.png)
+background-position: center
+background-size: contain
 
 ---
-
-## ザ・カーペントリーズ
-
-Data Carpentry, Library Carpentry, Software Carpentry
-
-![](images/carp-header.png)
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-2.png)
+background-position: center
+background-size: contain
 
 ---
-## ザ・カーペントリーズ日本
-
-- ボランティアからなる多国籍なグループが教材を日本語に翻訳している
-
-- コミュニティーを一緒に支える方を探しています！
-
-.center[<img src="images/swc-ja-team.png" alt="drawing" height="350">]
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-3.png)
+background-position: center
+background-size: contain
 
 ---
-## 参加者大募集中
-
-- Twitter: @swcarpentry_ja
-
-- Slack: https://carpentries-jp-en.herokuapp.com/ からアクセス
-
-- GitHub: https://github.com/swcarpentry-ja/i18n/
-
-- Meetup: 二ヶ月ごとにzoomで
-
-.center[<img src="https://4.bp.blogspot.com/-Q6dyWG9-rBs/UrlmwEb2YSI/AAAAAAAAcLc/uoaFgnGVfvo/s400/text_bosyuchu.png" alt="drawing" height="200">]
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-4.png)
+background-position: center
+background-size: contain
 
 ---
-## SWCワークショップの流れ
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-5.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-6.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-7.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-8.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-9.png)
+background-position: center
+background-size: contain
+
+---
+background-image:url(images/Beyond_AI-TheCarpentriesPresentation-10.png)
+background-position: center
+background-size: contain
+
+---
+### 行動規範
+
+どなたでも気兼ねなくワークショップに参加できるように、[行動規範](https://carpentries-coc.readthedocs.io/ja/latest/topic_folders/policies/code-of-conduct.html)があります。
+
+行動規範に反する行為があった場合は、[インシデントレポートフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeYqO37p0P-5JsEoF-E_edpZM5iRdFxWHTFqILo6LzqGS33YQ/viewform?fbzx=-8556883400541824673)で報告することができます。
+
+---
+### SWCワークショップの流れ
 
 - スライドによる内容の説明
 
 - **ライブコーディング**
 
 ---
-## ライブコーディングとは？
+### ライブコーディングとは？
 
-- インストラクターが打っていると同じコードを同時に自分のパソコンで打って行く
+- インストラクターが打っていると同じコードを同時に自分のパソコンで打っていく
 
 --
 
@@ -262,7 +258,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 .center[<img src="images/zoom_reactions.png" alt="drawing" height="200">]
 
 ---
-## ライブコーディングとは？
+### ライブコーディングとは？
 
 何か問題があった時に**声をかける**
 
@@ -277,16 +273,32 @@ Data Carpentry, Library Carpentry, Software Carpentry
 .center[<img src="images/zoom_reactions_hand.png" alt="drawing" height="200">]
 
 ---
-## フィードバックの種類
+### コラボレイティブ・ノート
+
+[Googleドキュメント](https://docs.google.com/document/d/1G11-8sXl5hbb71ky-YmeHpDvPWXkp0Y-Q65V-59-z78/edit#heading=h.414fvxu27my1)にコードを貼っておきます。
+
+もしインストラクターが進んで、コードが見えなくなったら、<br>Googleドキュメントを参照してください。
+
+### 参加者も自由に書き込んでいいです
+
+---
+### 画面設定のおすすめ
+
+![](images/example_screen.png)
+
+---
+### フィードバックの種類
 
 - クイズ（zoomの投票機能）
 
-- 感想（グーグルフォーム、グーグルドック）
-
 - ディスカッション（ブレークアウトルーム）
 
+- 感想（googleフォーム）
+
+- ワークショップ前後の[アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2021-04-02-todai-online-ja)
+
 ---
-## Zoomの使い方のお願い
+### Zoomの使い方のお願い
 
 .pull-left[
 - カメラを常にオン
@@ -306,21 +318,21 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 ---
 
-## Ice breaker
+### Ice breaker
 
 ４−５人ずつブレークアウトルームで自己紹介しましょう
 
 - どうやってRを知りましたか？
 
+- 研究テーマは何ですか？
+
 - 趣味は何ですか？
 
 ---
 
-## ソフトのインストール
+### ソフトのインストール
 
 - **R** https://cloud.r-project.org/
-
-  - `R.version.string`を打って、結果をチャットに貼ってください
 
 - **RStudio** https://rstudio.com/products/rstudio/download
 
@@ -330,9 +342,13 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
   - `install.packages("tidyverse")`
 
+[ワークショップのホームページ](https://swcarpentry-ja.github.io/2021-04-02-todai-online-ja/)
+
 ---
 
 ## 二日目 アウトライン
+
+- 一日目のおさらい
 
 - RStudio入門
 
@@ -342,15 +358,44 @@ Data Carpentry, Library Carpentry, Software Carpentry
 
 （休憩）
 
-- 関数
-
-- RStudioを使ったプロジェクト管理
+- 関数とパッケージ
 
 - ヘルプ機能
 
----
+- RStudioを使ったプロジェクト管理
 
-## なぜRを使うのか
+---
+### 一日目のおさらい
+
+Zoomのバージョンによっては反応ボタンを再度押す必要があるかもしれません
+
+.center[<img src="images/zoom_reactions.png" alt="drawing" height="200">]
+
+---
+### スタッフの紹介
+
+.pull-left[
+横田聡（ヘルパー）
+
+@megane0_0
+
+- 眼科医、客員研究員
+
+- 神戸アイセンター病院
+
+- カーペントリーズの<br>インストラクター
+
+- 研究テーマ：緑内障、<br>網膜変性疾患
+
+- 趣味：ゲーム
+]
+
+.pull-right[
+.center[<img src="images/yokota.jpg" alt="drawing" height="250">]
+]
+
+---
+### なぜRを使うのか
 
 - 無料だから
 
@@ -359,8 +404,7 @@ Data Carpentry, Library Carpentry, Software Carpentry
 - Rコードを使うことによって統計解析の再現性が上がる
 
 ---
-
-## RStudioって何？
+### RStudioって何？
 
 - 総合開発環境（IDE - Integrated Development Environment）
 
@@ -369,7 +413,6 @@ Data Carpentry, Library Carpentry, Software Carpentry
 - プロジェクト管理など、他にも便利機能がついています
 
 ---
-
 ### チャレンジ
 
 以下の変数名のうち、Rで使える変数名はどれでしょう？（複数可）
@@ -432,7 +475,21 @@ Data Carpentry, Library Carpentry, Software Carpentry
 5. .grey[toupper, "joel"]
 
 ---
+### パッケージとは？
 
+似たような目的を持つ関数のまとまり
+
+例:
+- 図を作るパケージ`ggplot2`
+- エクセルデータを読み込むパケージ`readxl`
+
+`install.packages()`でパッケージをインストールする
+- 一回でいい
+
+`library()`でパッケージをロードする（パケージの関数が使えるようにする）
+- Rを立ち上げる度にする必要あり
+
+---
 ### RStudio によるプロジェクト管理
 
 よくあること：
@@ -440,7 +497,6 @@ Data Carpentry, Library Carpentry, Software Carpentry
 .center[<img src="images/bad_layout.png" alt="drawing" height="400">]
 
 ---
-
 ### RStudio によるプロジェクト管理
 
 よくあること：
@@ -448,47 +504,31 @@ Data Carpentry, Library Carpentry, Software Carpentry
 .center[<img src="images/bad_layout_zoom.png" alt="drawing" height="400">]
 
 ---
-
 ### 問題
 
 1. データのバージョン（原本か修正版か）が分かりません
 
-2. コードのバージョンが分かりません
+2. 知りたい結果（図など）を探すのに時間がかかります
 
-3. 知りたい結果（図など）を探すのに時間がかかります
-
-4. 図とその図を出力するコードの対応が分かりません
+3. 図とその図を出力するコードの対応が分かりません
 
 --
 
 以上の問題を解決することによって、**しばらく手をつけていなくても、簡単にプロジェクトを再開できる**
 
 ---
-
-### RStudioで新しいプロジェクトを作成しましょう
+### RStudioで新しいプロジェクトを作りましょう
 
 1. "File" メニューボタンをクリックし、"New Project"をクリック
 2. "New Directory"をクリック
 3. "Empty Project"をクリック
-4. プロジェクトを保存するディレクトリの名前をタイプ（例 "my_project"）
-5. 可能なら、"Create a git repository"のチェックボックスを選択
-6. "Create Project" ボタンをクリック
+4. プロジェクトを保存するディレクトリの名前を入力（例 "todai-r-workshop"）
+5. "Create Project" ボタンをクリック
 
 ---
+### データディレクトリにデータを保存する
 
-### プロジェクト管理の最適なやり方
-
-1. データは読み込み専用にしましょう
-
-2. 生成されたアウトプットを捨てても良いようにしましょう
-
-3. 関数定義と適用は別々にしましょう
-
----
-
-### チャレンジ：データディレクトリにデータを保存する
-
-ギャップマインダーのデータを[ここから](https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_wide.csv)ダウンロードしましょう
+ギャップマインダーのデータを[ここから](https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_data.csv)ダウンロードしましょう
 
 1. ファイルをダウンロードする（CTRL + S、右マウスクリック -> 「名前を付けて保存する」、またはファイル ->「ページを名前を付けて保存する」)
 
@@ -499,22 +539,67 @@ Data Carpentry, Library Carpentry, Software Carpentry
 このデータは後で読み込んで色々調べます
 
 ---
+### Gapminderとは？
 
+.pull-left[
+様々な国の経済的な指標が<br>入っているデータセット
+
+- https://www.gapminder.org/
+- [Ted Talk](https://www.ted.com/talks/hans_rosling_let_my_dataset_change_your_mindset)
+- [Ted Talkの翻訳](http://www.aoky.net/articles/hans_rosling/hans_rosling_at_state.htm)
+]
+
+.pull-right[
+```{r plot-gapminder, echo=FALSE, message=FALSE, fig.retina=3}
+library(tidyverse)
+
+read_csv("data/gapminder_data.csv") %>%
+  filter(year == 1997) %>%
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
+  scale_x_log10() +
+  geom_point() +
+  theme(
+    legend.position="bottom", 
+    legend.box="vertical", 
+    legend.margin=margin()
+  )
+```
+]
+
+---
+### プロジェクト管理の最適なやり方
+
+1. データ入力とデータ解析を分けましょう
+
+2. データは読み込み専用にしましょう
+
+3. 生成されたアウトプットを捨てても良いようにしましょう
+
+4. コメントとREADMEファイルでメモを書きましょう
+
+---
+### フィードバック
+
+[このリンク](https://docs.google.com/forms/d/e/1FAIpQLSd9Xwa2wK8xqBipbRy1kWQZ7LFAMSBMhy2ccrMo-XR3o71pBg/viewform)を使って、下の二つを教えてください：
+
+- 今日のワークショップでうまく行ったこと
+
+- 今日のワークショップであまりうまく行かなかったこと
+
+---
 ## 三日目 アウトライン
 
 - 二日目のおさらい
 
 - データ型について
 
-- ベクトルの使い方１
+- ベクトルの使い方
 
 （休憩）
 
-- ベクトルの使い方２
+- ベクトルの使い方（続き）
 
 - データフレームの使い方
-
-- データフレームからデータを抜き出す
 
 ---
 
@@ -578,9 +663,7 @@ age <- c(15, 23, 48, 32, 66)
 
 - 三日目のおさらい
 
-- `filter()`、`select()`、`mutate()`関数を使ってみる
-
-- `group_by()`と`summarise()`関数を使って基本的な計算をしてみる
+- データフレームの使い方（続き）
 
 （休憩）
 
@@ -591,7 +674,6 @@ age <- c(15, 23, 48, 32, 66)
 - `ggplot()`関数を使って図を作成してみる
 
 ---
-
 ## 五日目 アウトライン
 
 - 四日目のおさらい
