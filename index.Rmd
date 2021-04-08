@@ -600,6 +600,34 @@ read_csv("data/gapminder_data.csv") %>%
 - データフレームの操作
 
 ---
+### 二日目のフィードバック
+
+良かったこと
+
+- 内容は初心者に分かりやすかった
+
+改善できること
+
+- 後半はペースが少し早かった
+
+- RStudioの文字が小さかった
+
+- データのダウンロードが出来なかった
+
+---
+### 欠席の場合
+
+プライバシーの観点から、録画を行なっていません。
+
+その代わり、以下の資料があります：
+
+- [共有Googleドキュメントのメモ](https://docs.google.com/document/d/1G11-8sXl5hbb71ky-YmeHpDvPWXkp0Y-Q65V-59-z78/edit#heading=h.rlgwimu5rk4l)
+
+- [レッスンの教材](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/)
+
+- [このスライド](https://swcarpentry-ja.github.io/2021-04-02-todai-slides/)
+
+---
 ### 三日目 教材
 
 - [データの構造](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/04-data-structures-part1/index.html)
@@ -611,11 +639,11 @@ read_csv("data/gapminder_data.csv") %>%
 - [dplyrによるデータフレームの操作](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/13-dplyr/index.html)
 
 ---
-### 二日目のおさらい
+### データのダウンロード
 
 もしデータのダウンロードがうまく行かなかったら...
 
-このdropboxのリンクを試して見てください：
+このdropboxのリンクを試してみてください：
 
 https://www.dropbox.com/s/p0am7wdamx6tyur/gapminder_data.csv?dl=0
 
