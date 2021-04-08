@@ -600,7 +600,18 @@ read_csv("data/gapminder_data.csv") %>%
 - データフレームの操作
 
 ---
-## 二日目のおさらい
+### 三日目 教材
+
+- [データの構造](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/04-data-structures-part1/index.html)
+
+- [ベクトル化](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/09-vectorization/index.html)
+
+- [データの部分集合化](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/06-data-subsetting/index.html)
+
+- [dplyrによるデータフレームの操作](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/13-dplyr/index.html)
+
+---
+### 二日目のおさらい
 
 もしデータのダウンロードがうまく行かなかったら...
 
@@ -633,7 +644,6 @@ https://www.dropbox.com/s/p0am7wdamx6tyur/gapminder_data.csv?dl=0
 1. bmi[-2]
 
 ---
-
 ### チャレンジ
 
 `mean()`関数は入力されたベクトルの平均を計算してくれます。`age`の中に平均値以上の値はいくつ入っていますか？
@@ -649,7 +659,6 @@ age <- c(15, 23, 48, 32, 66)
 1. 5
 
 ---
-
 ### 答え
 
 `mean()`関数は入力されたベクトルの平均を計算してくれます。`age`の中に平均値以上の値はいくつ入っていますか？
@@ -665,9 +674,9 @@ age <- c(15, 23, 48, 32, 66)
 1. 5
 
 ---
-## データフレームについて
+### データフレームについて
 
-表形式データ
+**データフレーム** = 表形式データ
 
 - エクセルとの大きな違い：各列は同じデータ型を<br>持たなければならない
 
@@ -676,7 +685,7 @@ age <- c(15, 23, 48, 32, 66)
 .center[<img src="images/dataframe-example.png" alt="drawing" height="300">]
 
 ---
-## データフレームの操作
+### データフレームの操作
 
 多くの場合、データ解析に入る前にデータを整える必要がある（"data wrangling", "data munging"）
 
@@ -687,14 +696,14 @@ age <- c(15, 23, 48, 32, 66)
 - まずは、**やり易い方から始めましょう**
 
 ---
-## チャレンジ（グループ）
+### チャレンジ（グループ）
 
 gapminderデータから、日本だけに絞って、さらに人工と年の二つの列だけを選んで、これを`japan_pop`として保存してください。
 
 ブレークアウトルームから戻ったら、そのコードをチャットに貼ってください。
 
 ---
-## チャレンジ（グループ）
+### チャレンジ（グループ）
 
 パイプを使って、gapminderデータをもっとも最近の年だけに絞って、人工と国の二つの列だけを選んで、人工の多い方から順番を変えてください。
 
