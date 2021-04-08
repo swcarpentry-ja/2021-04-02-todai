@@ -602,15 +602,40 @@ read_csv("data/gapminder_data.csv") %>%
 - データフレームの操作
 
 ---
+## 二日目のおさらい
+
+もしデータのダウンロードがうまく行かなかったら...
+
+このdropboxのリンクを試して見てください：
+
+https://www.dropbox.com/s/p0am7wdamx6tyur/gapminder_data.csv?dl=0
+
+---
+## 二日目のおさらい
+
+R Projectの作り方
+
+---
 ## データフレームについて
 
-四角いデータ（行と列として整理されているデータ）
+表形式データ
 
 - エクセルとの大きな違い：各列は同じデータ型を<br>持たなければならない
 
 - tidyverseパッケージでは、`tibble`と呼ばれる
 
 .center[<img src="images/dataframe-example.png" alt="drawing" height="300">]
+
+---
+## データフレームの操作
+
+多くの場合、データ解析に入る前にデータを整える必要がある（"data wrangling", "data munging"）
+
+- 今日はtidyverseによるデータフレームの操作の仕方を学びます
+
+- Rでは、**どんな目的でも、複数のやり方**があります
+
+- まずは、**やり易い方から始めましょう**
 
 ---
 ## チャレンジ（グループ）
