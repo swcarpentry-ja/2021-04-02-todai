@@ -703,11 +703,37 @@ gapminderデータから、日本だけに絞って、さらに人工と年の�
 ブレークアウトルームから戻ったら、そのコードをチャットに貼ってください。
 
 ---
+### 答え
+
+gapminderデータから、日本だけに絞って、さらに人工と年の二つの列だけを選んで、これを`japan_pop`として保存してください。
+
+```{r load-gapminder, echo = FALSE, message = FALSE}
+gapminder <- readr::read_csv("data/gapminder_data.csv")
+```
+
+```{r day3-challenge-3-answer, results = "hide"}
+gapminder_ja <- filter(gapminder, country == "Japan")
+japan_pop <- select(gapminder_ja, pop, year)
+```
+
+---
 ### チャレンジ（グループ）
 
 パイプを使って、gapminderデータをもっとも最近の年だけに絞って、人工と国の二つの列だけを選んで、人工の多い方から順番を変えてください。
 
 ブレークアウトルームから戻ったら、そのコードをチャットに貼ってください。
+
+---
+### 答え
+
+パイプを使って、gapminderデータをもっとも最近の年だけに絞って、人工と国の二つの列だけを選んで、人工の多い方から順番を変えてください。
+
+```{r day3-challenge-4-answer, results = "hide"}
+gapminder %>%
+  filter(year == 2007) %>%
+  select(country, pop) %>%
+  arrange(desc(pop))
+```
 
 ---
 
