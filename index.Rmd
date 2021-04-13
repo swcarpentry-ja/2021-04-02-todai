@@ -809,18 +809,6 @@ gapminder %>%
 1987年の大陸・地域ごとの平均寿命を計算してください。
 
 ---
-### 答え
-
-1987年の大陸・地域ごとの平均寿命を計算してください。
-
-```{r summarize-challenge-answer, eval = FALSE}
-gapminder %>%
-  filter(year == 1987) %>%
-  group_by(continent) %>%
-  summarize(mean_life_exp = mean(lifeExp))
-```
-
----
 ## ggplot2
 
 GG = **Grammar** of **Graphics**　「**グラフィック**の**文法**」
@@ -895,16 +883,6 @@ gapminder %>%
 ### チャレンジ（グループ）
 
 ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
-
----
-### 答え
-
-ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
-
-```{r gglot2-challenge, eval = FALSE}
-ggplot(data = gapminder) + 
-  geom_point(aes(x = year, y = lifeExp))
-```
 
 ---
 ## 五日目 アウトライン
