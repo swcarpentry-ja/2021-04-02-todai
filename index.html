@@ -402,17 +402,6 @@ Zoomのバージョンによっては反応ボタンを再度押す必要があ�
 5. MaxLength
 
 ---
-### 答え
-
-以下の変数名のうち、Rで使える変数名はどれでしょう？（複数可）
-
-1. .grey[min-height]
-2. **max.height**
-3. .grey[_age]
-4. **celsius2kelvin**
-5. **MaxLength**
-
----
 ### 関数とは？
 
 何かの値（インプット）を受けて、処理して、計算結果（アウトプット）を返すもの
@@ -440,17 +429,6 @@ Zoomのバージョンによっては反応ボタンを再度押す必要があ�
 3. toUpper("joel")
 4. toupper("joel")
 5. toupper, "joel"
-
----
-### 答え
-
-`toupper`はインプットの文字列を大文字にする関数です。`toupper`を使った、私の名前（"joel"）を大文字にするコードはどれが正しいでしょうか？
-
-1. .grey[toupper["joel"]]
-2. .grey[toupper(joel)]
-3. .grey[toUpper("joel")]
-4. **toupper("joel")**
-5. .grey[toupper, "joel"]
 
 ---
 ### パッケージとは？
@@ -625,18 +603,6 @@ https://www.dropbox.com/s/p0am7wdamx6tyur/gapminder_data.csv?dl=0
 1. bmi[-2]
 
 ---
-
-### 答え
-
-以下のうち、`bmi`から２つ目の数値だけを抜き出す事ができるのはどれでしょう？
-
-1. bmi[bmi &gt; 15]
-1. bmi[c(FALSE, TRUE)]
-1. bmi["2"]
-1. **bmi[bmi &lt; 25]**
-1. bmi[-2]
-
----
 ### チャレンジ
 
 `mean()`関数は入力されたベクトルの平均を計算してくれます。`age`の中に平均値以上の値はいくつ入っていますか？
@@ -648,22 +614,6 @@ age &lt;- c(15, 23, 48, 32, 66)
 
 1. 1
 1. 2
-1. 3
-1. 4
-1. 5
-
----
-### 答え
-
-`mean()`関数は入力されたベクトルの平均を計算してくれます。`age`の中に平均値以上の値はいくつ入っていますか？
-
-
-```r
-age &lt;- c(15, 23, 48, 32, 66)
-```
-
-1. 1
-1. **2**
 1. 3
 1. 4
 1. 5
@@ -698,39 +648,6 @@ gapminderデータから、日本だけに絞って、さらに人工と年の�
 ブレークアウトルームから戻ったら、そのコードをチャットに貼ってください。
 
 ---
-### 答え
-
-gapminderデータから、日本だけに絞って、さらに人工と年の二つの列だけを選んで、これを`japan_pop`として保存してください。
-
-
-
-
-```r
-gapminder_ja &lt;- filter(gapminder, country == "Japan")
-japan_pop &lt;- select(gapminder_ja, pop, year)
-```
-
----
-### チャレンジ（グループ）
-
-パイプを使って、gapminderデータをもっとも最近の年だけに絞って、人工と国の二つの列だけを選んで、人工の多い方から順番を変えてください。
-
-ブレークアウトルームから戻ったら、そのコードをチャットに貼ってください。
-
----
-### 答え
-
-パイプを使って、gapminderデータをもっとも最近の年だけに絞って、人工と国の二つの列だけを選んで、人工の多い方から順番を変えてください。
-
-
-```r
-gapminder %&gt;%
-  filter(year == 2007) %&gt;%
-  select(country, pop) %&gt;%
-  arrange(desc(pop))
-```
-
----
 ### フィードバック
 
 [このリンク](https://docs.google.com/forms/d/e/1FAIpQLSdVkUpfEwgCQ2kjYrg6ywbfVNpfs14eYd-8-Cz7D4fWmkWZjQ/viewform)を使って、下の二つを教えてください：
@@ -740,7 +657,6 @@ gapminder %&gt;%
 - 今日のワークショップであまりうまく行かなかったこと
 
 ---
-
 ## 四日目 アウトライン
 
 - 三日目のおさらい
@@ -771,12 +687,19 @@ gapminder %&gt;%
 - 本ワークショップ以外の資料
 
 ---
+### 四日目 教材
+
+- [dplyrによるデータフレームの操作](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/13-dplyr/index.html)
+
+- [ggplot2 を用いたパブリッシュ出来る品質のグラフィックスの作成](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/08-plot-ggplot2/index.html)
+
+---
 ### チャレンジ（グループ）
 
 1987年の大陸・地域ごとの平均寿命を計算してください。
 
 ---
-## ggplot2
+### ggplot2
 
 GG = **Grammar** of **Graphics**　「**グラフィック**の**文法**」
 
@@ -840,6 +763,15 @@ GDP in Japan, 1950-2007
 ### チャレンジ（グループ）
 
 ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
+
+---
+### フィードバック
+
+[このリンク](https://docs.google.com/forms/d/e/1FAIpQLSd6G_JwV7ALmBgOZrzJUCfaPMLyIlGG4tTr0BrH_Kqtvlxh6w/viewform?usp=sf_link)を使って、下の二つを教えてください：
+
+- 今日のワークショップでうまく行ったこと
+
+- 今日のワークショップであまりうまく行かなかったこと
 
 ---
 ## 五日目 アウトライン
