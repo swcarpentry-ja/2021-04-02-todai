@@ -804,6 +804,13 @@ gapminder %>%
 - 本ワークショップ以外の資料
 
 ---
+### 四日目 教材
+
+- [dplyrによるデータフレームの操作](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/13-dplyr/index.html)
+
+- [ggplot2 を用いたパブリッシュ出来る品質のグラフィックスの作成](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/08-plot-ggplot2/index.html)
+
+---
 ### チャレンジ（グループ）
 
 1987年の大陸・地域ごとの平均寿命を計算してください。
@@ -821,7 +828,7 @@ gapminder %>%
 ```
 
 ---
-## ggplot2
+### ggplot2
 
 GG = **Grammar** of **Graphics**　「**グラフィック**の**文法**」
 
@@ -905,6 +912,15 @@ ggplot2を使って、時間による平均余命の変化を表す図を作っ�
 ggplot(data = gapminder) + 
   geom_point(aes(x = year, y = lifeExp))
 ```
+
+---
+### フィードバック
+
+[このリンク](https://docs.google.com/forms/d/e/1FAIpQLSd6G_JwV7ALmBgOZrzJUCfaPMLyIlGG4tTr0BrH_Kqtvlxh6w/viewform?usp=sf_link)を使って、下の二つを教えてください：
+
+- 今日のワークショップでうまく行ったこと
+
+- 今日のワークショップであまりうまく行かなかったこと
 
 ---
 ## 五日目 アウトライン
