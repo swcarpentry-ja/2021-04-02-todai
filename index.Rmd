@@ -780,6 +780,8 @@ gapminder %>%
 
 - データフレームの操作（続き）
 
+- データフレームの出力
+
 （休憩）
 
 - `ggplot2`パッケージについて
@@ -804,7 +806,19 @@ gapminder %>%
 ---
 ### チャレンジ（グループ）
 
-１９８７年の大陸・地域ごとの平均寿命を計算してください。
+1987年の大陸・地域ごとの平均寿命を計算してください。
+
+---
+### 答え
+
+1987年の大陸・地域ごとの平均寿命を計算してください。
+
+```{r summarize-challenge-answer, eval = FALSE}
+gapminder %>%
+  filter(year == 1987) %>%
+  group_by(continent) %>%
+  summarize(mean_life_exp = mean(lifeExp))
+```
 
 ---
 ## ggplot2
@@ -812,11 +826,11 @@ gapminder %>%
 GG = **Grammar** of **Graphics**　「**グラフィック**の**文法**」
 
 .pull-left[
-図の構造にはいくつか決まった要素がある
+図の構造にはいくつか決まった<br>要素がある
 
-- geometry: 図はどのような形にする？
+- geometry: 図はどのような<br>形にする？
 
-- aesthetics: データをどのように図に表す？
+- aesthetics: データをどの<br>ように図に表す？
 ]
 
 .pull-right[
@@ -856,29 +870,41 @@ Bar graph
 
 ---
 ### Aesthetic mapping
-<br>
-.center[<img src="https://clauswilke.com/dataviz/aesthetic_mapping_files/figure-html/temp-normals-vs-time-1.png" alt="drawing" height="350">]
 
-.footnote[https://clauswilke.com/dataviz/aesthetic-mapping.html]
+GDP in Japan, 1950-2007
 
----
-### Aesthetic mapping
-<br><br>
-.center[<img src="https://clauswilke.com/dataviz/aesthetic_mapping_files/figure-html/four-locations-temps-by-month-1.png" alt="drawing" height="250">]
+.pull-left[
+```{r ggplot2-aes-map-1, retina = 3, echo = FALSE}
+gapminder %>%
+  filter(country == "Japan") %>%
+  ggplot() +
+  geom_point(aes(x = year, y = gdpPercap, color = pop))
+```
+]
 
-.footnote[https://clauswilke.com/dataviz/aesthetic-mapping.html]
+.pull-right[
+```{r ggplot2-aes-map-2, retina = 3, echo = FALSE}
+gapminder %>%
+  filter(country == "Japan") %>%
+  ggplot() +
+  geom_point(aes(x = year, y = gdpPercap, size = pop), shape = 1)
+```
+]
 
 ---
 ### チャレンジ（グループ）
 
-今までは平均余命とGDPの関係を下のコードで図を作ってきました：
+ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
+
+---
+### 答え
+
+ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
 
 ```{r gglot2-challenge, eval = FALSE}
 ggplot(data = gapminder) + 
-  geom_point(aes(x = gdpPercap, y = lifeExp))
+  geom_point(aes(x = year, y = lifeExp))
 ```
-
-このコードを変えて、時間による平均余命の変化を表す図を作ってください。
 
 ---
 ## 五日目 アウトライン
