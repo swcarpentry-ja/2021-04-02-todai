@@ -784,9 +784,101 @@ gapminder %>%
 
 - `ggplot2`パッケージについて
 
-- レイヤーの仕組み
-
 - `ggplot()`関数を使って図を作成してみる
+
+---
+### 三日目のフィードバック
+
+良かったこと
+
+- Rでどんなことができるのか分かりました
+
+改善できること
+
+- ブーレクアウトルームの分け方
+
+- チャレンジの時間
+
+- 本ワークショップ以外の資料
+
+---
+### チャレンジ（グループ）
+
+１９８７年の大陸・地域ごとの平均寿命を計算してください。
+
+---
+## ggplot2
+
+GG = **Grammar** of **Graphics**　「**グラフィック**の**文法**」
+
+.pull-left[
+図の構造にはいくつか決まった要素がある
+
+- geometry: 図はどのような形にする？
+
+- aesthetics: データをどのように図に表す？
+]
+
+.pull-right[
+.center[<img src="https://www.amazon.co.jp/images/I/41T80eRz+aL._SX313_BO1,204,203,200_.jpg" alt="drawing" height="300">]
+]
+
+---
+### Geometry
+
+.pull-left[
+Pie chart
+<br><br>
+<img src="https://clauswilke.com/dataviz/proportional_ink_files/figure-html/RI-pop-pie-1.png" alt="drawing" height="220">
+]
+
+.pull-right[
+Bar graph
+<br><br>
+<img src="https://clauswilke.com/dataviz/proportional_ink_files/figure-html/RI-pop-bars-1.png" alt="drawing" height="220">
+]
+
+.footnote[https://clauswilke.com/dataviz/proportional-ink.html]
+
+---
+### Aesthetics
+<br><br>
+.center[<img src="https://clauswilke.com/dataviz/aesthetic_mapping_files/figure-html/common-aesthetics-1.png" alt="drawing" height="250">]
+
+.footnote[https://clauswilke.com/dataviz/aesthetic-mapping.html]
+
+---
+### Aesthetics
+<br><br>
+.center[<img src="https://clauswilke.com/dataviz/aesthetic_mapping_files/figure-html/basic-scales-example-1.png" alt="drawing" height="180">]
+
+.footnote[https://clauswilke.com/dataviz/aesthetic-mapping.html]
+
+---
+### Aesthetic mapping
+<br>
+.center[<img src="https://clauswilke.com/dataviz/aesthetic_mapping_files/figure-html/temp-normals-vs-time-1.png" alt="drawing" height="350">]
+
+.footnote[https://clauswilke.com/dataviz/aesthetic-mapping.html]
+
+---
+### Aesthetic mapping
+<br><br>
+.center[<img src="https://clauswilke.com/dataviz/aesthetic_mapping_files/figure-html/four-locations-temps-by-month-1.png" alt="drawing" height="250">]
+
+.footnote[https://clauswilke.com/dataviz/aesthetic-mapping.html]
+
+---
+### チャレンジ（グループ）
+
+今までは平均余命とGDPの関係を下のコードで図を作ってきました：
+
+```{r gglot2-challenge, eval = FALSE}
+ggplot(data = gapminder) + 
+  geom_point(aes(x = gdpPercap, y = lifeExp))
+```
+
+このコードを変えて、時間による平均余命の変化を表す図を作ってください。
 
 ---
 ## 五日目 アウトライン
