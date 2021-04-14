@@ -995,3 +995,28 @@ gapminder %>%
 
 ---
 ### Rmarkdownとは？
+
+コードと文章を両方取り入れたファイル形式（Rmd）
+
+Rmarkdownからドキュメント（MS Word, PDF, htmlなど）を出力する
+
+.center[<img src="images/rmd_to_docs.png" alt="drawing" height="350">]
+
+---
+### Rmarkdownとは？
+
+コードと文章を両方取り入れたファイル形式
+
+Rmarkdownからドキュメント（MS Word, PDF, htmlなど）を出力する
+
+`r emo::ji("x")` Rによる計算結果をドキュメントにコピペする
+
+`r emo::ji("heavy large circle")` RMarkdownで自動的に計算結果が入ったドキュメントを出力する
+
+---
+### 他の資料
+
+- Tokyo.Rスラック（チャットルーム）
+   - https://github.com/TokyoR/r-wakalang
+   - `#r_beginners`チャンネルがおすすめ
+
