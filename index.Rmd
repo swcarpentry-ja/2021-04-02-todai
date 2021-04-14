@@ -935,3 +935,32 @@ ggplot(data = gapminder) +
 
 - `rmarkdown`でレポートを作成する（仮）
 
+---
+### gapminder データ
+
+- `country` 国
+
+- `year` 年
+
+- `pop` (population) 人口
+
+- `continent` 大陸
+
+- `lifeExp` (life expectancy) 平均寿命
+
+- `gdpPercap` (Gross Domestic Product per capita) 一人当たりの<br>国内総生産
+
+---
+### ggplot
+
+.center[<img src="images/ggplot-summary-1.png" alt="drawing" height="150">]
+
+---
+### ggplot
+
+.center[<img src="images/ggplot-summary-2.png" alt="drawing" height="120">]
+
+---
+### Rmarkdownとは？
+
+
