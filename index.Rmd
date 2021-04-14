@@ -1000,8 +1000,9 @@ gapminder %>%
 
 Rmarkdownからドキュメント（MS Word, PDF, htmlなど）を出力する
 
-.center[<img src="images/rmd_to_docs.png" alt="drawing" height="350">]
+.center[<img src="images/rmd_to_docs.png" alt="drawing" height="320">]
 
+.footnote[https://bookdown.org/yihui/rmarkdown-cookbook/rmarkdown-process.html]
 ---
 ### Rmarkdownとは？
 
