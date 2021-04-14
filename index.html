@@ -886,13 +886,13 @@ ggplot(data = gapminder) +
 
 - 四日目のおさらい
 
-- グループ別に色や形を変えてみる
+- 図の詳細設定
 
 - `ggsave()`関数で図を保存する
 
 （休憩）
 
-- `rmarkdown`でレポートを作成する（仮）
+- `Rmarkdown`でレポートを作成する（仮）
 
 ---
 ### gapminder データ
@@ -910,6 +910,51 @@ ggplot(data = gapminder) +
 - `gdpPercap` (Gross Domestic Product per capita) 一人当たりの&lt;br&gt;国内総生産
 
 ---
+### データの操作
+
+- `mutate()` 新しい列を作る
+
+- `group_by()` グループを指定する
+
+- `summarize()` グループごとに計算する
+
+---
+### パイプ %&gt;%
+
+途中結果を保存せずに処理を重ねる
+
+```
+data %&gt;%
+  処理の１ %&gt;%
+  処理の２ %&gt;% 
+  処理の３
+```
+
+---
+### パイプ %&gt;%
+
+途中結果を保存せずに処理を重ねる
+
+
+```r
+gapminder %&gt;%
+  filter(year == "2007") %&gt;%      # 1. 2007年のデータに絞る
+  group_by(continent) %&gt;%         # 2. 次の計算は大陸ごとに行う
+  summarize(mean_pop = mean(pop)) # 3. 人口の平均を計算する
+```
+
+```
+## # A tibble: 5 x 2
+##   continent   mean_pop
+##   &lt;chr&gt;          &lt;dbl&gt;
+## 1 Africa     17875763.
+## 2 Americas   35954847.
+## 3 Asia      115513752.
+## 4 Europe     19536618.
+## 5 Oceania    12274974.
+```
+
+---
 ### ggplot
 
 .center[&lt;img src="images/ggplot-summary-1.png" alt="drawing" height="150"&gt;]
@@ -921,8 +966,6 @@ ggplot(data = gapminder) +
 
 ---
 ### Rmarkdownとは？
-
-
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

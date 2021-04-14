@@ -927,13 +927,13 @@ ggplot(data = gapminder) +
 
 - 四日目のおさらい
 
-- グループ別に色や形を変えてみる
+- 図の詳細設定
 
 - `ggsave()`関数で図を保存する
 
 （休憩）
 
-- `rmarkdown`でレポートを作成する（仮）
+- `Rmarkdown`でレポートを作成する（仮）
 
 ---
 ### gapminder データ
@@ -951,6 +951,39 @@ ggplot(data = gapminder) +
 - `gdpPercap` (Gross Domestic Product per capita) 一人当たりの<br>国内総生産
 
 ---
+### データの操作
+
+- `mutate()` 新しい列を作る
+
+- `group_by()` グループを指定する
+
+- `summarize()` グループごとに計算する
+
+---
+### パイプ %>%
+
+途中結果を保存せずに処理を重ねる
+
+```
+data %>%
+  処理の１ %>%
+  処理の２ %>% 
+  処理の３
+```
+
+---
+### パイプ %>%
+
+途中結果を保存せずに処理を重ねる
+
+```{r pipe-example}
+gapminder %>%
+  filter(year == "2007") %>%      # 1. 2007年のデータに絞る
+  group_by(continent) %>%         # 2. 次の計算は大陸ごとに行う
+  summarize(mean_pop = mean(pop)) # 3. 人口の平均を計算する
+```
+
+---
 ### ggplot
 
 .center[<img src="images/ggplot-summary-1.png" alt="drawing" height="150">]
@@ -962,5 +995,3 @@ ggplot(data = gapminder) +
 
 ---
 ### Rmarkdownとは？
-
-
