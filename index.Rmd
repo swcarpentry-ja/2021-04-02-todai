@@ -927,11 +927,142 @@ ggplot(data = gapminder) +
 
 - 四日目のおさらい
 
-- グループ別に色や形を変えてみる
+- 図の詳細設定
 
 - `ggsave()`関数で図を保存する
 
 （休憩）
 
-- `rmarkdown`でレポートを作成する（仮）
+- `Rmarkdown`でレポートを作成する（仮）
 
+---
+### gapminder データ
+
+- `country` 国
+
+- `year` 年
+
+- `pop` (population) 人口
+
+- `continent` 大陸
+
+- `lifeExp` (life expectancy) 平均寿命
+
+- `gdpPercap` (Gross Domestic Product per capita) 一人当たりの<br>国内総生産
+
+---
+### データの操作
+
+- `mutate()` 新しい列を作る
+
+- `group_by()` グループを指定する
+
+- `summarize()` グループごとに計算する
+
+---
+### パイプ %>%
+
+途中結果を保存せずに処理を重ねる
+
+```
+data %>%
+  処理の１ %>%
+  処理の２ %>% 
+  処理の３
+```
+
+---
+### パイプ %>%
+
+途中結果を保存せずに処理を重ねる
+
+```{r pipe-example}
+gapminder %>%
+  filter(year == "2007") %>%      # 1. 2007年のデータに絞る
+  group_by(continent) %>%         # 2. 次の計算は大陸ごとに行う
+  summarize(mean_pop = mean(pop)) # 3. 人口の平均を計算する
+```
+
+---
+### ggplot
+
+.center[<img src="images/ggplot-summary-1.png" alt="drawing" height="150">]
+
+---
+### ggplot
+
+.center[<img src="images/ggplot-summary-2.png" alt="drawing" height="120">]
+
+---
+### Rmarkdownとは？
+
+コードと文章を両方取り入れたファイル形式（Rmd）
+
+Rmarkdownからドキュメント（MS Word, PDF, htmlなど）を出力する
+
+.center[<img src="images/rmd_to_docs.png" alt="drawing" height="320">]
+
+.footnote[https://bookdown.org/yihui/rmarkdown-cookbook/rmarkdown-process.html]
+---
+### Rmarkdownとは？
+
+コードと文章を両方取り入れたファイル形式
+
+Rmarkdownからドキュメント（MS Word, PDF, htmlなど）を出力する
+
+`r emo::ji("x")` Rによる計算結果をドキュメントにコピペする
+
+`r emo::ji("heavy large circle")` RMarkdownで自動的に計算結果が入ったドキュメントを出力する
+
+---
+### 他の資料
+
+.pull-left[
+**Rではじめるデータサイエンス**  
+(R for Data Science)
+]
+
+.pull-right[
+.center[<img src="https://images-na.ssl-images-amazon.com/images/I/91WTLn1DrBL.jpg" alt="drawing" height="350">]
+]
+
+
+---
+### 他の資料
+
+.pull-left[
+**RユーザのためのRStudio<br>[実践]入門**  
+tidyverseによるモダンな<br>分析フローの世界
+]
+
+.pull-right[
+.center[<img src="https://images-na.ssl-images-amazon.com/images/I/91D28Ji+LtL.jpg" alt="drawing" height="350">]
+]
+
+---
+### 他の資料
+
+- Tokyo.Rスラック（チャットルーム）
+   - https://github.com/TokyoR/r-wakalang
+   - `#r_beginners`チャンネルがおすすめ
+
+---
+### 他の資料
+
+[R for Social Scientists](https://datacarpentry.org/r-socialsci/) (Data Carpentry)（英語）
+<br><br>
+.center[<img src="images/dc_r_home.png" alt="drawing" height="320">]
+
+---
+### 翻訳プロジェクトの参加
+
+- ホームページ：https://swcarpentry-ja.github.io/
+
+- このスラックに入ってね！
+
+  - https://carpentries-ja.herokuapp.com/
+
+---
+class: center, inverse, middle
+
+# ご参加ありがとう<br>ございました！
