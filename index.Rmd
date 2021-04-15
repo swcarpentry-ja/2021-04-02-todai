@@ -1156,7 +1156,7 @@ tidyverseによるモダンな<br>分析フローの世界
 
 - ホームページ：https://swcarpentry-ja.github.io/
 
-- 翻訳プロジェクトのスラックに入ってね！
+- こちらから翻訳プロジェクトのスラックに入れます！
 
   - https://carpentries-ja.herokuapp.com/
 
