@@ -933,7 +933,7 @@ ggplot(data = gapminder) +
 
 （休憩）
 
-- `Rmarkdown`でレポートを作成する（仮）
+- `Rmarkdown`でレポートを作成する
 
 ---
 ### gapminder データ
@@ -951,6 +951,17 @@ ggplot(data = gapminder) +
 - `gdpPercap` (Gross Domestic Product per capita) 一人当たりの<br>国内総生産
 
 ---
+
+### データの操作
+
+- `filter()` データから行を絞る
+
+- `select()` データから列を選択する
+
+- `arrange()` データを並び替える
+
+---
+
 ### データの操作
 
 - `mutate()` 新しい列を作る
@@ -960,15 +971,16 @@ ggplot(data = gapminder) +
 - `summarize()` グループごとに計算する
 
 ---
+
 ### パイプ %>%
 
 途中結果を保存せずに処理を重ねる
 
 ```
 data %>%
-  処理の１ %>%
-  処理の２ %>% 
-  処理の３
+  処理１ %>%
+  処理２ %>%
+  処理３
 ```
 
 ---
