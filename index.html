@@ -1007,7 +1007,7 @@ ggplot(gapminder) +
 ]
 
 .pull-right[
-&lt;img src="index_files/figure-html/mojibake-2-1.png" width="504" /&gt;
+![](images/mojibake-2-1.png)
 ]
 ---
 ### チャレンジ（グループ）
@@ -1015,6 +1015,21 @@ ggplot(gapminder) +
 この図を再現してください
 
 &lt;img src="index_files/figure-html/ggplot-final-quiz-1.png" width="100%" /&gt;
+
+---
+### 答え
+
+
+```r
+gapminder %&gt;%
+  filter(year == 2007) %&gt;%
+  ggplot(aes(x = gdpPercap, y = lifeExp, 
+             color = continent, size = pop)) +
+  geom_point() +
+  labs(y = "Life expectancy", x = "GDP per capita", 
+       color = "Continent", size = "Population", 
+       title = "Wealth and life expectancy, 2007")
+```
 
 ---
 ### Rmarkdownとは？
@@ -1117,7 +1132,7 @@ tidyverseによるモダンな&lt;br&gt;分析フローの世界
 
 - ホームページ：https://swcarpentry-ja.github.io/
 
-- 翻訳プロジェクトのスラックに入ってね！
+- こちらから翻訳プロジェクトのスラックに入れます！
 
   - https://carpentries-ja.herokuapp.com/
 

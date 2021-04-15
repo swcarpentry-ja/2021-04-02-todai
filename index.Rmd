@@ -1035,12 +1035,7 @@ ggplot(gapminder) +
 ]
 
 .pull-right[
-```{r mojibake-2, echo = FALSE, fig.retina = 3}
-ggplot(gapminder, aes(x = year, y = pop)) +
-  geom_point() +
-  labs(y = "人口", x = "年") +
-  theme_gray(base_family = "HiraKakuPro-W3")
-```
+![](images/mojibake-2-1.png)
 ]
 ---
 ### チャレンジ（グループ）
@@ -1053,6 +1048,20 @@ gapminder %>%
   ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
   geom_point() +
   labs(y = "Life expectancy", x = "GDP per capita", color = "Continent", size = "Population", title = "Wealth and life expectancy, 2007")
+```
+
+---
+### 答え
+
+```{r ggplot-final-quiz-answer, eval = FALSE}
+gapminder %>%
+  filter(year == 2007) %>%
+  ggplot(aes(x = gdpPercap, y = lifeExp, 
+             color = continent, size = pop)) +
+  geom_point() +
+  labs(y = "Life expectancy", x = "GDP per capita", 
+       color = "Continent", size = "Population", 
+       title = "Wealth and life expectancy, 2007")
 ```
 
 ---
