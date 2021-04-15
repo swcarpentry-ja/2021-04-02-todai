@@ -5,7 +5,7 @@ author: ""
 date: ""
 output:
   xaringan::moon_reader:
-    self_contained: true
+    self_contained: false
     css: xaringan-themer.css
     lib_dir: libs
     seal: false
@@ -936,6 +936,19 @@ ggplot(data = gapminder) +
 - `Rmarkdown`でレポートを作成する
 
 ---
+### 四日目のフィードバック
+
+良かったこと
+
+- ヘルパーに質問に答えてもらった
+
+- データの可視化が出来て、楽しかった
+
+改善できること
+
+- 内容が難しくて、追い付くことが出来なかった
+
+---
 ### gapminder データ
 
 - `country` 国
@@ -1006,6 +1019,19 @@ gapminder %>%
 .center[<img src="images/ggplot-summary-2.png" alt="drawing" height="120">]
 
 ---
+### チャレンジ（グループ）
+
+この図を再現してください
+
+```{r ggplot-final-quiz, echo = FALSE, fig.retina = 3, fig.asp = 0.6, out.width = "100%"}
+gapminder %>%
+  filter(year == 2007) %>%
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
+  geom_point() +
+  labs(y = "Life expectancy", x = "GDP per capita", color = "Continent", size = "Population", title = "Wealth and life expectancy, 2007")
+```
+
+---
 ### Rmarkdownとは？
 
 コードと文章を両方取り入れたファイル形式（Rmd）
@@ -1015,6 +1041,7 @@ Rmarkdownからドキュメント（MS Word, PDF, htmlなど）を出力する
 .center[<img src="images/rmd_to_docs.png" alt="drawing" height="320">]
 
 .footnote[https://bookdown.org/yihui/rmarkdown-cookbook/rmarkdown-process.html]
+
 ---
 ### Rmarkdownとは？
 
@@ -1025,6 +1052,35 @@ Rmarkdownからドキュメント（MS Word, PDF, htmlなど）を出力する
 `r emo::ji("x")` Rによる計算結果をドキュメントにコピペする
 
 `r emo::ji("heavy large circle")` RMarkdownで自動的に計算結果が入ったドキュメントを出力する
+
+#### `r emo::ji("right arrow")` 再現性が上がる
+
+---
+### Rmarkdownの実例
+
+`manuscript.Rmd`
+
+.center[<img src="images/rmd-example-1.png" alt="drawing">]
+
+.footnote[https://github.com/joelnitta/moorea_filmies]
+
+---
+### Rmarkdownの実例
+
+.center[<img src="images/rmd-example-2.png" alt="drawing">]
+
+---
+### Rmarkdownの実例
+
+.center[<img src="images/rmd-example-3.png" alt="drawing" height="550">]
+
+---
+### Rmarkdownの作成
+
+1. "File" をクリックし、"New File -> R Markdown"をクリック
+2. "Title"と"Author"を記入
+3. "File -> Save As"でファイル名をつけて保存する
+4. "Knit"アイコン（毛糸玉マーク）をクリック
 
 ---
 ### 他の資料
@@ -1054,10 +1110,16 @@ tidyverseによるモダンな<br>分析フローの世界
 ---
 ### 他の資料
 
-- Tokyo.Rスラック（チャットルーム）
+- Tokyo.R スラック（チャットルーム）
    - https://github.com/TokyoR/r-wakalang
-   - `#r_beginners`チャンネルがおすすめ
-
+   - `#r_beginners` チャンネルがおすすめ
+   
+- Tokyo.R 勉強会
+   - https://tokyor.connpass.com/
+   - 土曜午後
+   - １−２ヶ月に一回
+   - 毎回初心者セッションあり
+   
 ---
 ### 他の資料
 
@@ -1070,11 +1132,24 @@ tidyverseによるモダンな<br>分析フローの世界
 
 - ホームページ：https://swcarpentry-ja.github.io/
 
-- このスラックに入ってね！
+- 翻訳プロジェクトのスラックに入ってね！
 
   - https://carpentries-ja.herokuapp.com/
 
 ---
-class: center, inverse, middle
-
+background-image:url(images/title-image.png)
+background-size: 35%
+background-position: 90% 95%
+<br>
 # ご参加ありがとう<br>ございました！
+
+<br><br><br><img src="https://beyondai.jp/images/common/logo.svg" alt="drawing" height="75">
+
+---
+### ワークショップ後アンケート
+
+1. [フィードバック](https://forms.gle/e4xckzJS7rSXnHRQA)
+
+2. [BA'Iのアンケート](https://forms.gle/8LosfiTKpUGwfAnUA)
+
+3. [ザ・カーペントリーズのアンケート](https://carpentries.typeform.com/to/hIg7dK3r?slug=2021-04-02-todai-online-ja)
