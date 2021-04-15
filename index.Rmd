@@ -424,17 +424,6 @@ Zoomのバージョンによっては反応ボタンを再度押す必要があ�
 5. MaxLength
 
 ---
-### 答え
-
-以下の変数名のうち、Rで使える変数名はどれでしょう？（複数可）
-
-1. .grey[min-height]
-2. **max.height**
-3. .grey[_age]
-4. **celsius2kelvin**
-5. **MaxLength**
-
----
 ### 関数とは？
 
 何かの値（インプット）を受けて、処理して、計算結果（アウトプット）を返すもの
@@ -462,17 +451,6 @@ Zoomのバージョンによっては反応ボタンを再度押す必要があ�
 3. toUpper("joel")
 4. toupper("joel")
 5. toupper, "joel"
-
----
-### 答え
-
-`toupper`はインプットの文字列を大文字にする関数です。`toupper`を使った、私の名前（"joel"）を大文字にするコードはどれが正しいでしょうか？
-
-1. .grey[toupper["joel"]]
-2. .grey[toupper(joel)]
-3. .grey[toUpper("joel")]
-4. **toupper("joel")**
-5. .grey[toupper, "joel"]
 
 ---
 ### パッケージとは？
@@ -660,18 +638,6 @@ https://www.dropbox.com/s/p0am7wdamx6tyur/gapminder_data.csv?dl=0
 1. bmi[-2]
 
 ---
-
-### 答え
-
-以下のうち、`bmi`から２つ目の数値だけを抜き出す事ができるのはどれでしょう？
-
-1. bmi[bmi > 15]
-1. bmi[c(FALSE, TRUE)]
-1. bmi["2"]
-1. **bmi[bmi < 25]**
-1. bmi[-2]
-
----
 ### チャレンジ
 
 `mean()`関数は入力されたベクトルの平均を計算してくれます。`age`の中に平均値以上の値はいくつ入っていますか？
@@ -682,21 +648,6 @@ age <- c(15, 23, 48, 32, 66)
 
 1. 1
 1. 2
-1. 3
-1. 4
-1. 5
-
----
-### 答え
-
-`mean()`関数は入力されたベクトルの平均を計算してくれます。`age`の中に平均値以上の値はいくつ入っていますか？
-
-```{r challenge-code-age-answer}
-age <- c(15, 23, 48, 32, 66)
-```
-
-1. 1
-1. **2**
 1. 3
 1. 4
 1. 5
@@ -730,18 +681,8 @@ gapminderデータから、日本だけに絞って、さらに人工と年の�
 
 ブレークアウトルームから戻ったら、そのコードをチャットに貼ってください。
 
----
-### 答え
-
-gapminderデータから、日本だけに絞って、さらに人工と年の二つの列だけを選んで、これを`japan_pop`として保存してください。
-
 ```{r load-gapminder, echo = FALSE, message = FALSE}
 gapminder <- readr::read_csv("data/gapminder_data.csv")
-```
-
-```{r day3-challenge-3-answer, results = "hide"}
-gapminder_ja <- filter(gapminder, country == "Japan")
-japan_pop <- select(gapminder_ja, pop, year)
 ```
 
 ---
@@ -814,18 +755,6 @@ gapminder %>%
 ### チャレンジ（グループ）
 
 1987年の大陸・地域ごとの平均寿命を計算してください。
-
----
-### 答え
-
-1987年の大陸・地域ごとの平均寿命を計算してください。
-
-```{r summarize-challenge-answer, eval = FALSE}
-gapminder %>%
-  filter(year == 1987) %>%
-  group_by(continent) %>%
-  summarize(mean_life_exp = mean(lifeExp))
-```
 
 ---
 ### ggplot2
@@ -902,16 +831,6 @@ gapminder %>%
 ### チャレンジ（グループ）
 
 ggplot2を使って、時間による平均寿命の変化を表す図を作ってください。
-
----
-### 答え
-
-ggplot2を使って、時間による平均寿命の変化を表す図を作ってください。
-
-```{r gglot2-challenge, eval = FALSE}
-ggplot(data = gapminder) + 
-  geom_point(aes(x = year, y = lifeExp))
-```
 
 ---
 ### フィードバック
@@ -1048,20 +967,6 @@ gapminder %>%
   ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +
   geom_point() +
   labs(y = "Life expectancy", x = "GDP per capita", color = "Continent", size = "Population", title = "Wealth and life expectancy, 2007")
-```
-
----
-### 答え
-
-```{r ggplot-final-quiz-answer, eval = FALSE}
-gapminder %>%
-  filter(year == 2007) %>%
-  ggplot(aes(x = gdpPercap, y = lifeExp, 
-             color = continent, size = pop)) +
-  geom_point() +
-  labs(y = "Life expectancy", x = "GDP per capita", 
-       color = "Continent", size = "Population", 
-       title = "Wealth and life expectancy, 2007")
 ```
 
 ---
