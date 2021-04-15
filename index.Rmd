@@ -901,12 +901,12 @@ gapminder %>%
 ---
 ### チャレンジ（グループ）
 
-ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
+ggplot2を使って、時間による平均寿命の変化を表す図を作ってください。
 
 ---
 ### 答え
 
-ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
+ggplot2を使って、時間による平均寿命の変化を表す図を作ってください。
 
 ```{r gglot2-challenge, eval = FALSE}
 ggplot(data = gapminder) + 
@@ -1018,6 +1018,30 @@ gapminder %>%
 
 .center[<img src="images/ggplot-summary-2.png" alt="drawing" height="120">]
 
+---
+### 文字化けを防ぐ方法（mac版）
+
+`+ theme_gray (base_family = "HiraKakuPro-W3")`<br>を最後に加える
+
+.pull-left[
+```{r mojibake-1, eval = FALSE}
+ggplot(gapminder) +
+  geom_point(
+    aes(x=year, y=pop)) +
+  labs(y="人口", x="年") +
+  theme_gray(
+    base_family="HiraKakuPro-W3")
+```
+]
+
+.pull-right[
+```{r mojibake-2, echo = FALSE, fig.retina = 3}
+ggplot(gapminder, aes(x = year, y = pop)) +
+  geom_point() +
+  labs(y = "人口", x = "年") +
+  theme_gray(base_family = "HiraKakuPro-W3")
+```
+]
 ---
 ### チャレンジ（グループ）
 

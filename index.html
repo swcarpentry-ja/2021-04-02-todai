@@ -859,12 +859,12 @@ GDP in Japan, 1950-2007
 ---
 ### チャレンジ（グループ）
 
-ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
+ggplot2を使って、時間による平均寿命の変化を表す図を作ってください。
 
 ---
 ### 答え
 
-ggplot2を使って、時間による平均余命の変化を表す図を作ってください。
+ggplot2を使って、時間による平均寿命の変化を表す図を作ってください。
 
 
 ```r
@@ -989,6 +989,26 @@ gapminder %&gt;%
 
 .center[&lt;img src="images/ggplot-summary-2.png" alt="drawing" height="120"&gt;]
 
+---
+### 文字化けを防ぐ方法（mac版）
+
+`+ theme_gray (base_family = "HiraKakuPro-W3")`&lt;br&gt;を最後に加える
+
+.pull-left[
+
+```r
+ggplot(gapminder) +
+  geom_point(
+    aes(x=year, y=pop)) +
+  labs(y="人口", x="年") +
+  theme_gray(
+    base_family="HiraKakuPro-W3")
+```
+]
+
+.pull-right[
+&lt;img src="index_files/figure-html/mojibake-2-1.png" width="504" /&gt;
+]
 ---
 ### チャレンジ（グループ）
 
