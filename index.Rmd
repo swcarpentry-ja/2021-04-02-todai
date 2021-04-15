@@ -1017,7 +1017,52 @@ Rmarkdownからドキュメント（MS Word, PDF, htmlなど）を出力する
 ---
 ### 他の資料
 
+.pull-left[
+**Rではじめるデータサイエンス**  
+(R for Data Science)
+]
+
+.pull-right[
+.center[<img src="https://images-na.ssl-images-amazon.com/images/I/91WTLn1DrBL.jpg" alt="drawing" height="350">]
+]
+
+
+---
+### 他の資料
+
+.pull-left[
+**RユーザのためのRStudio<br>[実践]入門**  
+tidyverseによるモダンな<br>分析フローの世界
+]
+
+.pull-right[
+.center[<img src="https://images-na.ssl-images-amazon.com/images/I/91D28Ji+LtL.jpg" alt="drawing" height="350">]
+]
+
+---
+### 他の資料
+
 - Tokyo.Rスラック（チャットルーム）
    - https://github.com/TokyoR/r-wakalang
    - `#r_beginners`チャンネルがおすすめ
 
+---
+### 他の資料
+
+[R for Social Scientists](https://datacarpentry.org/r-socialsci/) (Data Carpentry)（英語）
+<br><br>
+.center[<img src="images/dc_r_home.png" alt="drawing" height="320">]
+
+---
+### 翻訳プロジェクトの参加
+
+- ホームページ：https://swcarpentry-ja.github.io/
+
+- このスラックに入ってね！
+
+  - https://carpentries-ja.herokuapp.com/
+
+---
+class: center, inverse, middle
+
+# ご参加ありがとう<br>ございました！
