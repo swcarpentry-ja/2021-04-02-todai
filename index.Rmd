@@ -938,6 +938,13 @@ ggplot(data = gapminder) +
 - これからRを学ぶための資料
 
 ---
+### 五日目 教材
+
+- [ggplot2 を用いたパブリッシュ出来る品質のグラフィックスの作成](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/08-plot-ggplot2/index.html)
+
+- [knitr によるレポートの作成](https://swcarpentry-ja.github.io/r-novice-gapminder/ja/_episodes/15-knitr-markdown/index.html)
+
+---
 ### 四日目のフィードバック
 
 良かったこと
